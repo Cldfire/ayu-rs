@@ -1,0 +1,197 @@
+/* 
+Note that:
+
+    1. I am not a CSS expert and will likely use cringe-worthy terminology
+    2. I wrote these comments after putting the CSS together
+    3. I put little to no effort into organizing this file
+
+Thank you.
+*/
+
+
+/* fairly self-explanatory */
+body {
+    background-color: #0f1419;
+    color: #e6e6e6;
+}
+
+/* basically the search bar */
+nav.sub {
+    /* remove line below search bar */
+    border-bottom: none;
+}
+
+/* global scrollbar */
+::-webkit-scrollbar {
+    /* actual width is 2px */
+    width: 5px;
+}
+
+/* global scrollbar thumb (aka the part you see) */
+::-webkit-scrollbar-thumb {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 2px;
+    /* hacky way to 'pad' right side */
+    border-right: 3px solid #0f1419;
+}
+
+/* rust logo located top left */
+.sidebar img {
+    /* TODO: actual rust logo thing */
+    content: url(http://i.imgur.com/qTvxhue.png);
+}
+
+/* change highlighted text color to look something like ayu */
+::selection {
+    background-color: rgba(37, 51, 64, 0.99);
+}
+
+/* top left thing on sidebar */
+.sidebar .location {
+    background: #0f1419;
+    color: #333;
+}
+
+/* shift + ? */
+#help dt {
+    background: #0f1419;
+}
+
+/* shift + ? */
+#help > div {
+    background: #14191f;
+    box-shadow: 0px 6px 20px 0px black;
+    border: none;
+    border-radius: 4px;
+}
+
+/* fixes things related to code backing */
+.in-band {
+    background-color: #0f1419;
+}
+
+/* change color of headers and the lines that go under them */
+h1, h2, h3:not(.impl):not(.method):not(.type):not(.tymethod), h4:not(.method):not(.type):not(.tymethod) {
+    color: white;
+    border-bottom-color: #5c6773;
+}
+
+/* fixes things related to code backing */
+.invisible > code {
+    background-color: #0f1419;
+}
+
+/* fixes things related to code backing */
+.in-band > code {
+    background-color: #0f1419;
+}
+
+a {
+    color: #fff;
+}
+
+/* `Run` button on code blocks */
+a.test-arrow {
+    font-family: "Roboto Mono";
+    font-size: 90%;
+    color: #5c6773 !important;
+    border-radius: 4px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+/* when button is hovered */
+a.test-arrow:hover {
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c !important;
+    font-weight: 300;
+}
+
+/* modules, crates, types, etc. on sidebar */
+.block a, .block a.current.crate {
+    color: #5c6773 !important;
+    font-family: "Roboto Mono", "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+/* selected one */
+a.current {
+    color: #fff !important;
+}
+
+/* more color changes for the lines below headers */
+.docblock h1, .docblock h2, .docblock h3, .docblock h4, .docblock h5 {
+    border-bottom-color: #5c6773;
+}
+
+/* I don't remember, other than that this is the color for URLs */
+.docblock a, .docblock-short a, .stability a {
+    color: #0096cf;
+}
+
+/* search bar */
+.search-input {
+    color: #ffffff;
+    background-color: #141920;
+    box-shadow: none;
+    transition: box-shadow 150ms ease-in-out;
+    border-radius: 4px;
+}
+
+/* when typing in it */
+.search-input:focus {
+    border-radius: 4px;
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+/* code in between backticks */
+.docblock code, .docblock-short code {
+    background-color: #191f26;
+}
+
+/* code blocks */
+pre {
+    background-color: #191f26;
+    border-radius: 4px;
+}
+
+/* `#[]` */
+pre.rust .attribute {
+    color: #5c6773 !important;
+    font-style: italic;
+}
+
+/* making it work */
+pre.rust .attribute, pre.rust .attribute .ident, pre.rust .attribute .op {
+    color: #5c6773;
+}
+
+/* lots of things, main orange color */
+pre.rust .kw, pre.rust .kw-2, pre.rust .prelude-ty, pre.rust .bool-val, pre.rust .prelude-val, pre.rust .op, pre.rust .lifetime {
+    color: #ff7733;
+}
+
+/* numbers and strings */
+pre.rust .number, pre.rust .string {
+    color: #b8cc52;
+}
+
+/* self */
+pre.rust .self {
+    color: #36a3d9;
+    font-style: italic;
+}
+
+/* macros */
+pre.rust .macro, pre.rust .macro-nonterminal {
+    color: #ffb454;
+}
+
+/* comments */
+pre.rust .comment {
+    color: #5c6773;
+    font-style: italic;
+}

@@ -1,0 +1,225 @@
+/* 
+Note that:
+
+    1. I put little to no effort into organizing this file
+    2. These will be semi-documented soon-ish
+
+Thank you.
+*/
+
+body {
+    background-color: #0f1419;
+    color: #e6e6e6;
+}
+
+.in-band, code {
+    background-color: #191f26;
+    border-radius: 4px;
+}
+
+.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+    background-color: inherit;
+}
+
+div.container {
+    background-color: #0f1419;
+}
+
+div.cratesfyi-package-container {
+    border-bottom: 0px solid #5c6773;
+    background-color: #0f1419;
+}
+
+div.cratesfyi-package-container .pure-menu .pure-menu-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+div.cratesfyi-package-container .pure-menu .pure-menu-active:hover {
+    border-bottom: 1px solid #ffb44c !important;
+}
+
+div.cratesfyi-package-container .pure-menu .pure-menu-link:hover {
+    color: #fff;
+    background-color: inherit !important;
+    border-bottom: 1px solid rgba(242, 151, 24, 0.3);
+}
+
+div.cratesfyi-package-container .pure-menu .pure-menu-active {
+    color: #fff;
+    background-color: #0f1419;
+    border-bottom: 1px solid #ffb44c;
+    border-top: 0px solid #ddd;
+    border-left: 0px solid #ddd;
+    border-right: 0px solid #ddd;
+}
+
+div.package-page-container div.package-menu li.pure-menu-heading {
+    color: #fff;
+    border-bottom: 1px solid #5c6773;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.package-page-container div.package-menu a.pure-menu-link:hover {
+    background-color: rgba(70, 70, 70, 0.33);
+    color: #fff;
+}
+
+html, button, input, select, textarea, .pure-g [class*="pure-u"] {
+    color: #e6e6e6;
+}
+
+.block a:hover {
+    background: rgba(70, 70, 70, 0.33);
+}
+
+a.pure-menu-link:active {
+    background-color: #0f1419;
+}
+
+.about a {
+    color: #0096cf;
+}
+
+div.package-page-container div.package-details a {
+    color: #0096cf;
+}
+
+div.package-page-container div.package-menu a.pure-menu-link {
+    color: #5c6773;
+}
+
+.pure-table thead {
+    background-color: #191f26;
+    color: #e6e6e6;
+}
+
+.pure-table {
+    border: 1px solid #5c6773;
+}
+
+.pure-table-horizontal td, .pure-table-horizontal th {
+    border-bottom: 1px solid #5c6773;
+}
+
+.pure-button-hover, .pure-button:hover, .pure-button:focus {
+    filter: none;
+    background-image: none;
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+    font-weight: 300;
+}
+
+.pure-button-normal {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.pure-button {
+    font-family: "Roboto Mono";
+    font-size: 90%;
+    color: #5c6773;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+div.nav-container form.landing-search-form-nav input.search-input-nav {
+    background-color: #0f1419;
+}
+
+div.nav-container form.landing-search-form-nav input.search-input-nav:focus {
+    color: #fff;
+}
+
+.pure-g [class*="pure-u"] {
+  font-family: "Roboto Mono", "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.nav-container .pure-menu-link:hover {
+    color: #fff;
+}
+
+div.nav-container {
+    border-bottom: 1px solid #5c6773;
+}
+
+div.nav-container li {
+    border-left: 1px solid #5c6773;
+}
+
+div.nav-container .pure-menu-children {
+    border: 1px solid #5c6773;
+}
+
+.menu-item-divided {
+    border-bottom: 1px solid #5c6773;
+}
+
+.pure-menu-children {
+    background-color: #0f1419;
+}
+
+div.recent-releases-container .release {
+    border-bottom: 1px solid #5c6773;
+}
+
+div.recent-releases-container .release:hover {
+    background-color: rgba(70, 70, 70, 0.33);
+}
+
+div.recent-releases-container .name {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 90%;
+}
+
+div.recent-releases-container .date {
+    font-size: small;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5c6773; 
+    border-radius: 2px;
+    border-right: 3px solid #0f1419;
+}
+
+.hljs {
+    color: #fff;
+    background: #191f26;
+}
+
+.hljs-string, .hljs-doctag {
+    color: #b8cc52;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-subst {
+    color: #ff7733;
+}
+
+.hljs-built_in, .hljs-builtin-name {
+    color: #ffb454;
+}
+
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+    color: #ff7733;
+}
+
+.hljs-title, .hljs-section, .hljs-selector-id {
+    color: #ff7733;
+}
+
+.hljs-comment, .hljs-quote {
+    color: #5c6773;
+}
+
+.hljs-symbol, .hljs-bullet {
+    color: #ff7733;
+}
+
+.hljs-meta {
+    color: #5c6773;
+    font-style: italic;
+}
