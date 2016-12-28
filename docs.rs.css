@@ -28,6 +28,7 @@ div.container {
 div.cratesfyi-package-container {
     border-bottom: 0px solid #5c6773;
     background-color: #0f1419;
+    margin-bottom: 0px;
 }
 
 div.cratesfyi-package-container .pure-menu .pure-menu-link {
