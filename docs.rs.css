@@ -12,6 +12,11 @@ body {
     color: #e6e6e6;
 }
 
+div.warning {
+    background-color: #1a2633;
+    color: e6e6e6;
+}
+
 .in-band, code {
     background-color: #191f26;
     border-radius: 4px;
@@ -65,12 +70,12 @@ div.package-page-container div.package-menu a.pure-menu-link:hover {
     color: #fff;
 }
 
-html, button, input, select, textarea, .pure-g [class*="pure-u"] {
-    color: #e6e6e6;
+div.package-page-container div.package-menu {
+    margin-top: 10px;
 }
 
-.block a:hover {
-    background: rgba(70, 70, 70, 0.33);
+html, button, input, select, textarea, .pure-g [class*="pure-u"] {
+    color: #e6e6e6;
 }
 
 a.pure-menu-link:active {
@@ -85,8 +90,13 @@ div.package-page-container div.package-details a {
     color: #0096cf;
 }
 
+div.package-page-container div.package-details {
+    margin-top: 20px;
+}
+
 div.package-page-container div.package-menu a.pure-menu-link {
     color: #5c6773;
+    font-size: 80%;
 }
 
 .pure-table thead {

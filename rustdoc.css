@@ -15,10 +15,15 @@ body {
     color: #e6e6e6;
 }
 
-/* basically the search bar */
-nav.sub {
-    /* remove line below search bar */
+/* remove lines below nav things */
+nav {
     border-bottom: none;
+    margin-bottom: 8px;
+}
+
+/* help position search bar correctly */
+.content {
+    padding: 0px;
 }
 
 /* global scrollbar */
@@ -51,6 +56,7 @@ nav.sub {
 .sidebar .location {
     background: #0f1419;
     color: #333;
+    margin: 10px 0 20px 0;
 }
 
 /* shift + ? */
@@ -78,17 +84,16 @@ h1, h2, h3:not(.impl):not(.method):not(.type):not(.tymethod), h4:not(.method):no
 }
 
 /* fixes things related to code backing */
-.invisible > code {
-    background-color: #0f1419;
-}
-
-/* fixes things related to code backing */
-.in-band > code {
+h4 > code, h3 > code, h2 > code, h1 > code, td > code, .in-band > code, p > code, .invisible > code {
     background-color: #0f1419;
 }
 
 a {
     color: #fff;
+}
+
+.block a:hover {
+    background: rgba(70, 70, 70, 0.33);
 }
 
 /* `Run` button on code blocks */
@@ -139,12 +144,18 @@ a.current {
     box-shadow: none;
     transition: box-shadow 150ms ease-in-out;
     border-radius: 4px;
+    margin-top: 8px;
 }
 
 /* when typing in it */
 .search-input:focus {
     border-radius: 4px;
     box-shadow: 0px 6px 20px 0px black;
+}
+
+/* move docs down from top */
+div.search-container {
+    margin-top: 20px;
 }
 
 /* code in between backticks */
@@ -194,4 +205,33 @@ pre.rust .macro, pre.rust .macro-nonterminal {
 pre.rust .comment {
     color: #5c6773;
     font-style: italic;
+}
+
+/* struct color in doc listing */
+.content span.struct, .content a.struct, .block a.current.struct {
+    color: #4dbf99;
+}
+
+/* enum color */
+.content span.enum, .content a.enum, .block a.current.enum {
+    color: #f07178;
+}
+
+/* trait color */
+.content span.trait, .content a.trait, .block a.current.trait {
+    color: #36a3d9;
+}
+ /* type definition color */
+.content span.type, .content a.type, .block a.current.type {
+    color: #ff7733;
+}
+
+/* function name color */
+.content span.fn, .content a.fn, .block a.current.fn, .content span.method, .content a.method, .block a.current.method, .content span.tymethod, .content a.tymethod, .block a.current.tymethod, .content .fnname {
+    color: #ffb454;
+}
+
+/* macro name color */
+.content span.macro, .content a.macro, .block a.current.macro {
+    color: #a37acc;
 }
