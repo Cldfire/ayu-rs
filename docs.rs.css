@@ -14,7 +14,7 @@ body {
 
 div.warning {
     background-color: #1a2633;
-    color: e6e6e6;
+    color: #e6e6e6;
 }
 
 .in-band, code {
@@ -185,6 +185,30 @@ div.recent-releases-container .name {
 
 div.recent-releases-container .date {
     font-size: small;
+}
+
+div.recent-releases-container {
+    margin-top: 10px;
+}
+
+div.highcharts-container {
+    margin-top: 10px;
+}
+
+rect.highcharts-background {
+    fill: #0f1419;
+}
+
+text.highcharts-title {
+    fill: #e6e6e6 !important;
+}
+
+g.highcharts-axis-labels > text {
+    fill: #e6e6e6 !important;
+}
+
+g.highcharts-legend-item > text {
+    fill: #5c6773 !important;
 }
 
 ::-webkit-scrollbar {
