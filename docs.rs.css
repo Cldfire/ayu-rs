@@ -1,8 +1,10 @@
 /* 
 Note that:
 
-    1. I put little to no effort into organizing this file
-    2. These will be semi-documented soon-ish
+    1. I am not a CSS expert and will likely use cringe-worthy terminology 
+       and cringe-worthy methods to get the look I want
+    2. I wrote these comments after putting the CSS together
+    3. I put little to no effort into organizing this file
 
 Thank you.
 */
@@ -145,6 +147,10 @@ div.nav-container form.landing-search-form-nav input.search-input-nav:focus {
   font-family: "Roboto Mono", "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.pure-u-1.pure-u-sm-17-24.pure-u-md-19-24 {
+    padding-right: 10px;
+}
+
 div.nav-container .pure-menu-link:hover {
     color: #fff;
 }
@@ -199,11 +205,7 @@ rect.highcharts-background {
     fill: #0f1419;
 }
 
-text.highcharts-title {
-    fill: #e6e6e6 !important;
-}
-
-g.highcharts-axis-labels > text {
+text.highcharts-title, g.highcharts-axis-labels > text {
     fill: #e6e6e6 !important;
 }
 
@@ -211,14 +213,33 @@ g.highcharts-legend-item > text {
     fill: #5c6773 !important;
 }
 
+g.highcharts-grid > path {
+    stroke: #5c6773 !important;
+}
+
+/* global scrollbar */
 ::-webkit-scrollbar {
+    /* actual width is 2px */
     width: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+/* global scrollbar thumb (aka the part you see) */
+::-webkit-scrollbar-thumb:vertical {
     background-color: #5c6773; 
-    border-radius: 2px;
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* hacky way to 'pad' right side */
     border-right: 3px solid #0f1419;
+}
+
+/* global scrollbar thumb horizontal (aka the part you see) */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* more ugly, ugly, ugly hacks */
+    border-bottom: 3px solid #191f26;
+    border-top: 11px solid #191f26;
 }
 
 .hljs {

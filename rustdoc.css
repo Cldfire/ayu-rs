@@ -1,7 +1,8 @@
 /* 
 Note that:
 
-    1. I am not a CSS expert and will likely use cringe-worthy terminology
+    1. I am not a CSS expert and will likely use cringe-worthy terminology 
+       and cringe-worthy methods to get the look I want
     2. I wrote these comments after putting the CSS together
     3. I put little to no effort into organizing this file
 
@@ -12,7 +13,7 @@ Thank you.
 /* fairly self-explanatory */
 body {
     background-color: #0f1419;
-    color: #e6e6e6;
+    color: #c5c5c5;
 }
 
 /* remove lines below nav things */
@@ -26,6 +27,17 @@ nav {
     padding: 0px;
 }
 
+/* selected thing (function, method, etc.) */
+:target {
+    background: rgba(70, 70, 70, 0.33);
+    border-right: 3px solid #ffb44c;
+}
+
+/* fix selected thing code part */
+h4:target code {
+    background: inherit;
+}
+
 /* global scrollbar */
 ::-webkit-scrollbar {
     /* actual width is 2px */
@@ -33,18 +45,27 @@ nav {
 }
 
 /* global scrollbar thumb (aka the part you see) */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
     background-color: #5c6773; 
     /* doesn't look right because of below hack */
-    border-radius: 2px;
+    border-radius: 4px;
     /* hacky way to 'pad' right side */
     border-right: 3px solid #0f1419;
 }
 
+/* global scrollbar thumb horizontal (aka the part you see) */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* more ugly, ugly, ugly hacks */
+    border-bottom: 3px solid #191f26;
+    border-top: 11px solid #191f26;
+}
+
 /* rust logo located top left */
 .sidebar img {
-    /* TODO: actual rust logo thing */
-    content: url(http://i.imgur.com/qTvxhue.png);
+    content: url(http://blog.seanmartell.com/wp-content/uploads/2012/03/logo_0053_54.png);
 }
 
 /* change highlighted text color to look something like ayu */
@@ -57,6 +78,11 @@ nav {
     background: #0f1419;
     color: #333;
     margin: 10px 0 20px 0;
+}
+
+/* top left beneath logo, orange colons */
+p.location {
+    color: #ff7733 !important;
 }
 
 /* shift + ? */
@@ -72,26 +98,35 @@ nav {
     border-radius: 4px;
 }
 
-/* fixes things related to code backing */
-.in-band {
-    background-color: #0f1419;
-}
-
 /* change color of headers and the lines that go under them */
-h1, h2, h3:not(.impl):not(.method):not(.type):not(.tymethod), h4:not(.method):not(.type):not(.tymethod) {
+h1, h2, h3:not(.impl):not(.method):not(.type):not(.tymethod), h4:not(.method):not(.type):not(.tymethod), 
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited {
     color: white;
     border-bottom-color: #5c6773;
 }
 
 /* fixes things related to code backing */
-h4 > code, h3 > code, h2 > code, h1 > code, td > code, .in-band > code, p > code, .invisible > code {
+h4 > code, h3 > code, h2 > code, h1 > code, td > code, .in-band > code, p > code, .invisible > code, .in-band {
     background-color: #0f1419;
 }
 
-a {
-    color: #fff;
+code {
+    color: #ffb454;
 }
 
+span > code {
+    color: #e6e6e6;
+}
+
+a {
+    color: #0096cf;
+}
+
+.docblock a > code {
+    color: #0096cf !important;
+}
+
+/* hover highlight for blocks on sidebar */
 .block a:hover {
     background: rgba(70, 70, 70, 0.33);
 }
@@ -163,10 +198,25 @@ div.search-container {
     background-color: #191f26;
 }
 
+/* stability notes (such as unstable) */
+.stab {
+    border-style: none;
+    border-top: 1px solid #5c6773;
+    margin-bottom: 5px;
+}
+
+em.stab {
+    background: #314559 !important;
+    border-style: none !important;
+    border-radius: 4px;
+    padding: 3px 6px 3px 6px;
+}
+
 /* code blocks */
 pre {
     background-color: #191f26;
     border-radius: 4px;
+    color: #e6e6e6;
 }
 
 /* `#[]` */
@@ -196,25 +246,25 @@ pre.rust .self {
     font-style: italic;
 }
 
-/* macros */
-pre.rust .macro, pre.rust .macro-nonterminal {
-    color: #ffb454;
-}
-
 /* comments */
 pre.rust .comment {
     color: #5c6773;
     font-style: italic;
 }
 
-/* struct color in doc listing */
+/* module color in doc listing */
+.content span.externcrate, .content span.mod, .content a.mod, .block a.current.mod {
+    color: #acccf9;
+}
+
+/* struct color */
 .content span.struct, .content a.struct, .block a.current.struct {
-    color: #4dbf99;
+    color: #ffa0a5;
 }
 
 /* enum color */
 .content span.enum, .content a.enum, .block a.current.enum {
-    color: #f07178;
+    color: #99e0c9;
 }
 
 /* trait color */
@@ -223,15 +273,77 @@ pre.rust .comment {
 }
  /* type definition color */
 .content span.type, .content a.type, .block a.current.type {
-    color: #ff7733;
+    color: #cfbcf5;
 }
 
 /* function name color */
 .content span.fn, .content a.fn, .block a.current.fn, .content span.method, .content a.method, .block a.current.method, .content span.tymethod, .content a.tymethod, .block a.current.tymethod, .content .fnname {
-    color: #ffb454;
+    color: #fdd687;
 }
 
 /* macro name color */
-.content span.macro, .content a.macro, .block a.current.macro {
+.content span.macro, .content a.macro, .block a.current.macro, pre.rust .macro, pre.rust .macro-nonterminal {
     color: #a37acc;
+}
+
+/* book stuff */
+
+blockquote {
+    color: inherit;
+    background-color: rgba(70, 70, 70, 0.33);
+    border-style: none;
+    border-radius: 4px;
+}
+
+/* sidebar */
+#toc {
+    border-style: none;
+    background-color: #0f1419;
+}
+
+/* list items */
+.chapter li a {
+    color: #5c6773;
+}
+
+/* when selected */
+.chapter li a.active {
+    color: #fff;
+}
+
+/* when hovered */
+.chapter li a:hover {
+    color: #fff;
+    background-color: rgba(70, 70, 70, 0.33);
+}
+
+/* space between each item */
+.chapter {
+    line-height: 22px;
+}
+
+/* inherit from above */
+.section {
+    line-height: inherit;
+}
+
+/* button to show list on small screens (kinda pointless to style but whatever) */
+#toggle-nav {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+/* individual bars */
+#toggle-nav .bar {
+    background-color: #5c6773;
+}
+
+/* on hover */
+#toggle-nav:hover {
+    background-color: rgba(242, 151, 24, 0.05);
+}
+
+#toggle-nav:hover .bar {
+    background-color: #ffb44c;
 }
