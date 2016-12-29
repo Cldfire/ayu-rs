@@ -88,6 +88,10 @@ a.pure-menu-link:active {
     color: #0096cf;
 }
 
+a.release {
+    color: #c5c5c5;
+}
+
 div.package-page-container div.package-details a {
     color: #0096cf;
 }
