@@ -1,12 +1,8 @@
 /* 
 Note that:
-
     1. I am not a CSS expert and will likely use cringe-worthy terminology 
        and cringe-worthy methods to get the look I want
-    2. I wrote these comments after putting the CSS together
-    3. I put little to no effort into organizing this file
-
-Thank you.
+    2. I put little to no effort into organizing this file
 */
 
 body {
@@ -92,6 +88,10 @@ a.release {
     color: #c5c5c5;
 }
 
+p.location a {
+    color: #fff;
+}
+
 div.package-page-container div.package-details a {
     color: #0096cf;
 }
@@ -102,7 +102,6 @@ div.package-page-container div.package-details {
 
 div.package-page-container div.package-menu a.pure-menu-link {
     color: #5c6773;
-    font-size: 80%;
 }
 
 .pure-table thead {
@@ -147,10 +146,6 @@ div.nav-container form.landing-search-form-nav input.search-input-nav:focus {
     color: #fff;
 }
 
-.pure-g [class*="pure-u"] {
-  font-family: "Roboto Mono", "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .pure-u-1.pure-u-sm-17-24.pure-u-md-19-24 {
     padding-right: 10px;
 }
@@ -189,8 +184,10 @@ div.recent-releases-container .release:hover {
 
 div.recent-releases-container .name {
     color: #ffffff;
-    font-weight: 400;
-    font-size: 90%;
+}
+
+div.package-page-container pre code {
+    margin-top: 20px;
 }
 
 div.recent-releases-container .date {
@@ -255,8 +252,8 @@ g.highcharts-grid > path {
     color: #b8cc52;
 }
 
-.hljs-keyword, .hljs-selector-tag, .hljs-subst {
-    color: #ff7733;
+.hljs-keyword, .hljs-title, .hljs-selector-tag, .hljs-subst {
+    color: #ff7733 !important;
 }
 
 .hljs-built_in, .hljs-builtin-name {
@@ -267,7 +264,7 @@ g.highcharts-grid > path {
     color: #ff7733;
 }
 
-.hljs-title, .hljs-section, .hljs-selector-id {
+.hljs-section, .hljs-selector-id {
     color: #ff7733;
 }
 
@@ -282,4 +279,8 @@ g.highcharts-grid > path {
 .hljs-meta {
     color: #5c6773;
     font-style: italic;
+}
+
+.hljs-regexp, .hljs-link {
+    color: #95e6cb;
 }

@@ -1,12 +1,11 @@
 /* 
 Note that:
-
     1. I am not a CSS expert and will likely use cringe-worthy terminology 
        and cringe-worthy methods to get the look I want
-    2. I wrote these comments after putting the CSS together
-    3. I put little to no effort into organizing this file
+    2. I put little to no effort into organizing this file
 
-Thank you.
+Quick notes on things I learned while working on this (here so I remember them):
+    * `>` selector applies to immediate descendants only
 */
 
 
@@ -29,7 +28,7 @@ nav {
 
 /* selected thing (function, method, etc.) */
 :target {
-    background: rgba(70, 70, 70, 0.33);
+    background: rgba(255, 52, 52, 0.33);
     border-right: 3px solid #ffb44c;
 }
 
@@ -112,6 +111,10 @@ h4 > code, h3 > code, h2 > code, h1 > code, td > code, .in-band > code, p > code
 
 code {
     color: #ffb454;
+}
+
+pre > code {
+    color: #e6e6e6; 
 }
 
 span > code {
@@ -210,6 +213,18 @@ em.stab {
     border-style: none !important;
     border-radius: 4px;
     padding: 3px 6px 3px 6px;
+}
+
+.stab.deprecated {
+    background: #314559;
+    border-style: none;
+    border-radius: 4px;
+    padding: 3px 6px 3px 6px;
+}
+
+/* fix methods */
+.method.stab {
+    border-top-style: none;
 }
 
 /* code blocks */
