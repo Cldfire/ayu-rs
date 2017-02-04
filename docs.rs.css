@@ -186,10 +186,6 @@ div.recent-releases-container .name {
     color: #ffffff;
 }
 
-div.package-page-container pre code {
-    margin-top: 20px;
-}
-
 div.recent-releases-container .date {
     font-size: small;
 }
@@ -252,7 +248,7 @@ g.highcharts-grid > path {
     color: #b8cc52;
 }
 
-.hljs-keyword, .hljs-title, .hljs-selector-tag, .hljs-subst {
+.hljs-keyword, .hljs-title, .hljs-selector-tag, .hljs-subst, .hljs-attribute {
     color: #ff7733 !important;
 }
 
