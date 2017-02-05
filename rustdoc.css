@@ -362,3 +362,13 @@ blockquote {
 #toggle-nav:hover .bar {
     background-color: #ffb44c;
 }
+
+/* sticker in bottom-right on doc.rust-lang.org */
+.white-sticker {
+    background-color: transparent;
+}
+
+/* rust logo there */
+div#versioninfo > img {
+    content: url(http://blog.seanmartell.com/wp-content/uploads/2012/03/logo_0053_54.png);
+}

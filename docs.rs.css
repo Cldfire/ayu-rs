@@ -35,7 +35,7 @@ div.cratesfyi-package-container {
 }
 
 div.cratesfyi-package-container .pure-menu .pure-menu-link {
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid transparent;
 }
 
 div.cratesfyi-package-container .pure-menu .pure-menu-active:hover {
