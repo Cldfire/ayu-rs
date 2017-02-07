@@ -1,0 +1,275 @@
+/* i32 and official */
+:root, body {
+    background-color: #0f1419;
+    background-image: none;
+    color: #c5c5c5;
+}
+
+:root::before {
+    content: none;
+}
+
+#configure-editor span {
+    background: url("data:image/svg+xml,%3C?xml version='1.0' standalone='no'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' version='1.1'%3E%3Cpath fill='%2375818e' stroke='%2375818e' stroke-width='1' d='M 7,0.5 6.5,1 6.5,3 6,3.5 5.5,3.5 4,2 3,2 2,3 2,4 3.5,5.5 3.5,6 3,6.5 1,6.5 0.5,7 l 0,2 0.5,0.5 2,0 0.5,0.5 0,0.5 -1.5,1.5 0,1 1,1 1,0 1.5,-1.5 0.5,0 0.5,0.5 0,2 0.5,0.5 2,0 0.5,-0.5 0,-2 0.5,-0.5 0.5,0 1.5,1.5 1,0 1,-1 0,-1 -1.5,-1.5 0,-0.5 0.5,-0.5 2,0 L 15.5,9 15.5,7 15,6.5 13,6.5 12.5,6 12.5,5.5 14,4 14,3 13,2 12,2 10.5,3.5 10,3.5 9.5,3 9.5,1 9,0.5 Z m 1,5 c 1.5,0 2.5,1 2.5,2.5 0,1.5 -1,2.5 -2.5,2.5 C 6.5,10.5 5.5,9.5 5.5,8 5.5,6.5 6.5,5.5 8,5.5 Z'/%3E%3C/svg%3E");
+}
+
+#configure-editor span:hover {
+    background: url("data:image/svg+xml,%3C?xml version='1.0' standalone='no'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' version='1.1'%3E%3Cpath fill='%23ffb44c' stroke='%23ffb44c' stroke-width='1' d='M 7,0.5 6.5,1 6.5,3 6,3.5 5.5,3.5 4,2 3,2 2,3 2,4 3.5,5.5 3.5,6 3,6.5 1,6.5 0.5,7 l 0,2 0.5,0.5 2,0 0.5,0.5 0,0.5 -1.5,1.5 0,1 1,1 1,0 1.5,-1.5 0.5,0 0.5,0.5 0,2 0.5,0.5 2,0 0.5,-0.5 0,-2 0.5,-0.5 0.5,0 1.5,1.5 1,0 1,-1 0,-1 -1.5,-1.5 0,-0.5 0.5,-0.5 2,0 L 15.5,9 15.5,7 15,6.5 13,6.5 12.5,6 12.5,5.5 14,4 14,3 13,2 12,2 10.5,3.5 10,3.5 9.5,3 9.5,1 9,0.5 Z m 1,5 c 1.5,0 2.5,1 2.5,2.5 0,1.5 -1,2.5 -2.5,2.5 C 6.5,10.5 5.5,9.5 5.5,8 5.5,6.5 6.5,5.5 8,5.5 Z'/%3E%3C/svg%3E");
+}
+
+/* i32 and official */
+button, .header-btn:not(.header-btn-primary) {
+    color: #75818e;
+    background-color: transparent;
+    border: none;
+    font-family: "Roboto Mono";
+    font-size: 90%;
+}
+
+/* i32 and official */
+button:hover, button:focus, button:active, .header-btn:not(.header-btn-primary):hover, .header-btn:not(.header-btn-primary):focus, .header-btn:not(.header-btn-primary):active {
+    background: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+}
+
+button#mir {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: white;
+}
+
+/* i32 and official */
+button.primary:hover, button.primary:focus, button.primary:active, .header-btn.header-btn-primary:hover, .header-btn.header-btn-primary:focus, .header-btn.header-btn-primary:active {
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+}
+
+/* i32 and official */
+button.primary, .header-btn.header-btn-primary {
+    background-color: transparent;
+    color: #e6e6e6;
+    font-family: "Roboto Mono";
+}
+
+.radios > :first-child {
+    background: transparent;
+}
+
+input[type=radio]:checked + label {
+    background: transparent;
+    color: #e6e6e6;
+    border-bottom: 1px solid #ffb44c;
+    border-spacing: 2px;
+}
+
+input[type=radio]:checked + label:hover, input[type=radio]:checked:focus + label, input[type=radio]:checked:active + label {
+    background: transparent;
+    border-bottom: 1px solid #ffb44c;
+}
+
+.radios label:hover, .radios :focus + label, .radios :active + label, .header-mode label:hover, .header-mode :focus + label, .header-mode :active + label, .header-channel label:hover, .header-channel :focus + label, .header-channel :active + label {
+    background: transparent;
+    border-bottom: 1px solid rgba(242, 151, 24, 0.3);
+}
+
+/* i32 and official */
+.radios label, .header-mode label, .header-channel label {
+    color: #75818e;
+    background: transparent;
+    transition: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 0px !important;
+}
+
+.radios > :last-child {
+    background: transparent;
+}
+
+.dropdown {
+    background: #14191f;
+    border: none;
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+.dropdown::before {
+    background-color: #14191f;
+    border: none;
+}
+
+/* code editor itself */
+
+/* i32 and official */
+main, .playground-editor {
+    border: none;
+    border-radius: 0px;
+}
+
+.ace-chrome {
+    background-color: #0f1419;
+    color: #e6e1cf;
+}
+
+.ace-chrome .ace_gutter {
+    background: transparent;
+    color: #2d3640;
+    font-family: "Roboto Mono"
+}
+
+.ace-chrome .ace_gutter-active-line {
+    background-color: rgba(70, 70, 70, 0.25);
+}
+
+.ace-chrome .ace_marker-layer .ace_selection {
+    background-color: rgba(37, 51, 64, 0.99);
+}
+
+.ace-chrome .ace_cursor {
+    color: #f29718;
+}
+
+.ace-chrome .ace_print-margin {
+    visibility: hidden !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_active-line {
+    background: #14191f;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #5c6773; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #5c6773; 
+    border-radius: 4px;
+}
+
+/* look of code */
+
+.ace-chrome .ace_keyword.ace_operator {
+    color: #ff7733;
+}
+
+.ace-chrome .ace_support.ace_constant {
+    color: #e6e1cf;
+}
+
+.ace-chrome .ace_string, .ace-chrome .ace_constant.ace_numeric {
+    color: #b8cc52;
+}
+
+.ace-chrome .ace_storage, .ace-chrome .ace_keyword, .ace-chrome .ace_meta.ace_tag {
+    color: #ff7733;
+}
+
+.ace-chrome .ace_entity.ace_name.ace_function {
+    color: #ffb454;
+}
+
+.ace-chrome .ace_punctuation {
+    color: #ff7733;
+}
+
+.ace-chrome .ace_comment {
+    color: #5c6773;
+    font-style: italic;
+}
+
+.ace-chrome .ace_constant.ace_language {
+    color: #ff7733;
+}
+
+.ace-chrome .ace_variable {
+    color: #ff7733;
+}
+
+.ace-chrome .ace_indent-guide {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNQUFD4z6Crq/sfAAuYAuYl+7lfAAAAAElFTkSuQmCC) right repeat-y;
+}
+
+/* result thing (shows you errors, output) */
+
+#result.ace-chrome {
+    border: none !important;
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+#result.ace-chrome > button {
+    color: #e6e6e6;
+}
+
+/* rules specfically for i32's playground */
+
+.header-title {
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: #14191f;
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+div.configuration-actions > button {
+    border-radius: 4px;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+/* their output thing */
+
+.output-body {
+    background-color: #0f1419;
+    border: none;
+}
+
+.output-tab {
+    background-color: #0f1419;
+	border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.output-tab-selected {
+    color: #e6e6e6;
+    cursor: default;
+    border-bottom-color: #ffb44c;
+}
+
+.output-tab:last-of-type {
+    border-right: none;
+}
+
+.output-header {
+	visibility: hidden;   
+}
+
+.output-tab:focus,  .output-tab-selected:focus {
+    background-color: #0f1419; 
+    color: #e6e6e6;
+    outline: none;
+    border-bottom-color: #ffb44c;
+}
+
+.output-tab:hover, .output-tab:active {
+    background-color: #0f1419; 
+    color: #e6e6e6;
+    border-bottom-color: rgba(242, 151, 24, 0.3);
+}
+
+.output-tab-selected:hover, .output-tab-selected:active {
+    background-color: #0f1419; 
+    color: #e6e6e6;
+    border-bottom-color: #ffb44c;
+}
+
+a.token.error-location {
+    color: #cfbcf5;
+}

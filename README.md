@@ -6,6 +6,8 @@ Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the 
 
 * [Docs.rs](https://docs.rs)
 * [doc.rust-lang.org](https://doc.rust-lang.org)
+* [play.rust-lang.org](https://play.rust-lang.org/)
+* [play.integer32.com](http://play.integer32.com/)
 
 ## Usage
 

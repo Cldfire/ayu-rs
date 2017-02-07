@@ -114,11 +114,11 @@ code {
 }
 
 pre > code {
-    color: #e6e6e6; 
+    color: #e6e1cf; 
 }
 
 span > code {
-    color: #e6e6e6;
+    color: #e6e1cf;
 }
 
 a {
@@ -231,7 +231,7 @@ em.stab {
 pre {
     background-color: #191f26;
     border-radius: 4px;
-    color: #e6e6e6;
+    color: #e6e1cf;
 }
 
 /* `#[]` */
