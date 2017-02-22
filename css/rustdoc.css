@@ -208,16 +208,9 @@ div.search-container {
     margin-bottom: 5px;
 }
 
-em.stab {
+em.stab, .stab.deprecated, .stab.unstable {
     background: #314559 !important;
     border-style: none !important;
-    border-radius: 4px;
-    padding: 3px 6px 3px 6px;
-}
-
-.stab.deprecated {
-    background: #314559;
-    border-style: none;
     border-radius: 4px;
     padding: 3px 6px 3px 6px;
 }
