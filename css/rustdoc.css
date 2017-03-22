@@ -72,6 +72,11 @@ h4:target code {
     background-color: rgba(37, 51, 64, 0.99);
 }
 
+/* fix sidebar */
+.sidebar {
+    background-color: #0f1419;
+}
+
 /* top left thing on sidebar */
 .sidebar .location {
     background: #0f1419;
@@ -163,6 +168,7 @@ a.test-arrow:hover {
 /* selected one */
 a.current {
     color: #fff !important;
+    background-color: transparent !important;
 }
 
 /* more color changes for the lines below headers */
@@ -333,6 +339,21 @@ blockquote {
 /* inherit from above */
 .section {
     line-height: inherit;
+}
+
+/* fix line numbers for source */
+.content.source {
+    padding-top: 10px;
+}
+
+/* fix border look for line numbers */
+.content.source pre.rust {
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* same as above */
+.content pre.line-numbers {
+    border-radius: 4px 0px 0px 4px;
 }
 
 /* button to show list on small screens (kinda pointless to style but whatever) */

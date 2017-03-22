@@ -67,6 +67,7 @@ input[type=radio]:checked + label:hover, input[type=radio]:checked:focus + label
     border-bottom: 1px solid #ffb44c;
 }
 
+/*i32 and official*/
 .radios label:hover, .radios :focus + label, .radios :active + label, .header-mode label:hover, .header-mode :focus + label, .header-mode :active + label, .header-channel label:hover, .header-channel :focus + label, .header-channel :active + label {
     background: transparent;
     border-bottom: 1px solid rgba(242, 151, 24, 0.3);
