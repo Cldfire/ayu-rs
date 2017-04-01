@@ -301,3 +301,65 @@ a.token.error-location {
     background: transparent;
     border: none;
 }
+
+/* help page */
+
+.help {
+    background-color: #0f1419;
+}
+
+.help h1 {
+    color: white;
+}
+
+.help__header-link {
+    color: white;
+}
+
+.help p a, section.help > a {
+    color: #0096cf;
+    text-decoration: none;
+}
+
+.help p a:hover, section.help > a:hover {
+    text-decoration: underline;
+}
+
+p.help__logo {
+    -webkit-margin-before: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+p.help__logo img {
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+}
+
+code.help__code, pre.help__code {
+    background-color: #191f26;
+    border-radius: 4px;
+    color: #ffb44c;
+}
+
+.help :not(pre) > code[class*="language-"], .help pre[class*="language-"] {
+    background-color: #191f26;
+    border-radius: 4px;
+}
+
+.help code[class*="language-"] {
+    color: #e6e1cf;
+}
+
+button.help__load_example {
+    padding: .4em .6em;
+    transition: none;
+    -webkit-transition: none;
+    background: transparent;
+    color: #75818e;
+}
+
+button.help__load_example:hover {
+    background: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+}
