@@ -17,8 +17,12 @@
     background: url("data:image/svg+xml,%3C?xml version='1.0' standalone='no'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' version='1.1'%3E%3Cpath fill='%23ffb44c' stroke='%23ffb44c' stroke-width='1' d='M 7,0.5 6.5,1 6.5,3 6,3.5 5.5,3.5 4,2 3,2 2,3 2,4 3.5,5.5 3.5,6 3,6.5 1,6.5 0.5,7 l 0,2 0.5,0.5 2,0 0.5,0.5 0,0.5 -1.5,1.5 0,1 1,1 1,0 1.5,-1.5 0.5,0 0.5,0.5 0,2 0.5,0.5 2,0 0.5,-0.5 0,-2 0.5,-0.5 0.5,0 1.5,1.5 1,0 1,-1 0,-1 -1.5,-1.5 0,-0.5 0.5,-0.5 2,0 L 15.5,9 15.5,7 15,6.5 13,6.5 12.5,6 12.5,5.5 14,4 14,3 13,2 12,2 10.5,3.5 10,3.5 9.5,3 9.5,1 9,0.5 Z m 1,5 c 1.5,0 2.5,1 2.5,2.5 0,1.5 -1,2.5 -2.5,2.5 C 6.5,10.5 5.5,9.5 5.5,8 5.5,6.5 6.5,5.5 8,5.5 Z'/%3E%3C/svg%3E");
 }
 
+button:focus {
+    outline: none;
+}
+
 /* i32 and official */
-button, .header-btn:not(.header-btn-primary) {
+button, .header-set__btn:not(.header-set__btn--primary) {
     color: #75818e;
     background-color: transparent;
     border: none;
@@ -27,7 +31,7 @@ button, .header-btn:not(.header-btn-primary) {
 }
 
 /* i32 and official */
-button:hover, button:focus, button:active, .header-btn:not(.header-btn-primary):hover, .header-btn:not(.header-btn-primary):focus, .header-btn:not(.header-btn-primary):active {
+button:hover, button:focus, button:active, .header-set__btn:not(.header-set__btn--primary):hover, .header-set__btn:not(.header-set__btn--primary):focus, .header-set__btn:not(.header-set__btn--primary):active {
     background: rgba(242, 151, 24, 0.05);
     color: #ffb44c;
 }
@@ -39,13 +43,13 @@ button#mir {
 }
 
 /* i32 and official */
-button.primary:hover, button.primary:focus, button.primary:active, .header-btn.header-btn-primary:hover, .header-btn.header-btn-primary:focus, .header-btn.header-btn-primary:active {
+button.primary:hover, button.primary:focus, button.primary:active, .header-set__btn.header-set__btn--primary:hover, .header-set__btn.header-set__btn--primary:focus, .header-set__btn.header-set__btn--primary:active {
     background-color: rgba(242, 151, 24, 0.05);
     color: #ffb44c;
 }
 
 /* i32 and official */
-button.primary, .header-btn.header-btn-primary {
+button.primary, .header-set__btn.header-set__btn--primary {
     background-color: transparent;
     color: #e6e6e6;
     font-family: "Roboto Mono";
@@ -208,7 +212,7 @@ main, .playground-editor {
 
 /* rules specfically for i32's playground */
 
-.header-title {
+.header-set__title {
     background-color: transparent;
 }
 
@@ -273,4 +277,27 @@ div.configuration-actions > button {
 
 a.token.error-location {
     color: #cfbcf5;
+}
+
+.drop__menu {
+    border: 1px solid #5c6773;
+}
+
+.drop__menu-item {
+    border-bottom: none;
+}
+
+.drop__button {
+    background: #0f1419;
+    color: #777;
+}
+
+.drop__button:hover {
+    background: #0f1419;
+    color: #fff;
+}
+
+.header-set__buttons {
+    background: transparent;
+    border: none;
 }
