@@ -1,0 +1,99 @@
+main {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    color: #c5c5c5;
+}
+
+:target {
+    background: rgba(255, 52, 52, 0.33);
+    border-right: 3px solid #ffb44c;
+}
+
+table th {
+    border-bottom: 1px solid #5c6773;
+}
+
+pre[class*="language-"] {
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #191f26 !important;
+}
+
+pre > code:not(.highlight) {
+    color: #e6e1cf;
+}
+
+code {
+    border-radius: 3px;
+    padding: 0 0.2em;
+    color: #ffb454;
+    background-color: #191f26;
+}
+
+code:not(.highlight) {
+    color: #ffb454;
+}
+
+h1 a, h2 a {
+    color: #ffffff
+}
+
+h1:hover a, h2:hover a {
+    color: #ffffff;
+}
+
+h1.title {
+    color: #ffffff;
+    background-color: #141920;
+    margin-bottom: 20px;
+}
+
+button.active {
+    background-color: #0f1419;
+    box-shadow: none;
+}
+
+code span.s1 {
+    color: #b8cc52;
+}
+
+pre.language-toml .token.string {
+    color: #b8cc52;
+}
+
+pre.language-toml .token.toml-section {
+    color: #ff7733;
+}
+
+pre.language-toml .token.toml-key {
+    color: #ffb454;
+}
+
+pre.language-toml .token.number {
+    color: #ffb454;
+}
+
+pre.rust span.comment {
+    color: #5c6773;
+    font-style: italic;
+}
+
+pre.rust span.kw, pre.rust span.kw-2 {
+    color: #ff7733;
+}
+
+pre.rust span.macro {
+    color: #a37acc;
+}
+
+pre.rust span.string {
+    color: #b8cc52;
+}
+
+pre.rust span.op {
+    color: #ff7733;
+}

@@ -1,0 +1,348 @@
+html {
+    background: none;
+    background-color: #0f1419;
+}
+
+body {
+    background: #0f1419;
+}
+
+/* global scrollbar */
+::-webkit-scrollbar {
+    /* actual width is 2px */
+    width: 5px;
+}
+
+/* global scrollbar thumb (aka the part you see) */
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* hacky way to 'pad' right side */
+    border-right: 3px solid #0f1419;
+}
+
+/* global scrollbar thumb horizontal (aka the part you see) */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* more ugly, ugly, ugly hacks */
+    border-bottom: 3px solid #191f26;
+    border-top: 11px solid #191f26;
+}
+
+#main {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    color: #c5c5c5;
+}
+
+#install-downloads td.label {
+    color: #ffffff;
+    text-align: right;
+    padding-right: 15px;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+#title-header {
+    border-bottom: 1px solid #5c6773;
+}
+
+#header .menu, #header .nav {
+    margin-top: 10px;
+}
+
+#header .sep {
+    color: #5c6773;
+}
+
+.after-main-links a {
+    color: #c5c5c5;
+}
+
+.after-main-links .sep {
+    color: #5c6773;
+}
+
+#me-api {
+    color: #c5c5c5; 
+}
+
+#me-api h2 {
+    color: #ffffff; 
+}
+
+#me-api pre {
+    background-color: #191f26;
+    color: #e6e1cf;
+    border-radius: 4px;
+}
+
+#me-profile {
+    padding-bottom: 40px;
+}
+
+#me-profile dd {
+    color: #c5c5c5;
+}
+
+#crate-links, #me-profile {
+    border-bottom: 1px solid #5c6773;
+}
+
+.crate-info .install button, .crate-info .install button:active {
+    background-color: #141920;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.crate-info .install button:hover {
+    background: #363a3e;
+}
+
+.crate-info .install button img, .crate-info .install button:active img {
+    filter: invert(70%);
+}
+
+div.exact-match {
+    border-bottom: 1px solid #5c6773;
+}
+
+div.exact-match > h1 {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* search bar */
+input.search {
+    color: #ffffff !important;
+    background-color: #141920;
+    transition: box-shadow 150ms ease-in-out;
+    border-radius: 4px !important;
+    margin-top: 8px;
+    padding: 10px 16px 10px 35px !important;
+    width: 340px;
+    background-position: 8px 8px !important;
+    background-size: 19px 20px !important;
+    background-image: url(https://crates.io/assets/search-1bf5f758e4272794e840ccb4b0a0dca9.png) !important;
+}
+
+/* when typing in it */
+input.search:focus {
+    border-radius: 4px;
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+#crates-heading {
+    background-color: #141920;
+}
+
+#blurb #stats {
+    border-left: none;
+}
+
+a {
+    color: #0096cf;
+}
+
+a:hover {
+    color: #0096cf;
+    text-decoration: underline;
+}
+
+.crate-lists li a {
+    color: #c5c5c5;
+    background-color: #141920;
+    padding: 17px 10px;
+}
+
+.authorship li, .authorship p, div.docs p {
+    color: #c5c5c5;
+}
+
+.crate-lists li a:hover {
+    background-color: #191f26;
+}
+
+.crate-info {
+    border-bottom: 1px solid #5c6773;
+}
+
+.crate-info .authorship {
+    border-left: 1px solid #5c6773;
+}
+
+#crate-links {
+    border-bottom: 1px solid #5c6773;
+}
+
+ul.dropdown {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 6px 20px 0px black;
+    background: #0f1419;
+}
+
+ul.dropdown li {
+    background: #141920;
+}
+
+ul.dropdown li a {
+    color: #c5c5c5 !important;
+}
+
+ul.dropdown li a:hover {
+    background-color: #191f26;
+}
+
+ul.dropdown li.last {
+    border-top: 1px solid #5c6773;
+}
+
+a.fork-me {
+    pointer-events: none;
+}
+
+a.fork-me > img {
+    visibility: hidden;
+}
+
+#results span.amt {
+    color: #c5c5c5;
+}
+
+#results .cur, #results .total {
+    color: #ffffff;
+}
+
+.white-rows {
+    background-color: #0f1419;
+}
+
+.white-rows .row {
+    border-bottom: 1px solid #5c6773;
+    padding: 10px 0px;
+}
+
+.yellow-button:hover, .tan-button:hover, #results a.dropdown:hover, #install-downloads td a:hover {
+    background: none;
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c !important;
+    font-weight: 300;
+}
+
+.yellow-button, .tan-button, #results a.dropdown, #install-downloads td a {
+    cursor: pointer;
+    border: none;
+    font-family: "Roboto Mono";
+    font-size: 90%;
+    color: #5c6773 !important;
+    border-radius: 4px;
+    font-weight: 400;
+    background: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+#results a.dropdown {
+    font-size: 100%;
+}
+
+.crate-info .install {
+    background-color: #141920;
+    border-radius: 4px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+.crate-info .install code {
+    background-color: #191f26;
+    color: #e6e1cf;
+}
+
+.crate .info a {
+    color: #ffffff;
+}
+
+div.links a {
+    text-decoration: none;
+}
+
+#selection {
+    background-color: #141920;
+}
+
+#selection a {
+    color: #c5c5c5;
+    border-radius: 4px;
+}
+
+#selection a:hover {
+    background-color: #191f26;
+    color: #0096cf;
+    text-decoration: underline;
+}
+
+#selection a.active {
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+}
+
+.pagination img {
+    filter: invert();
+}
+
+.pagination a {
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #141920;
+}
+
+.pagination a.next.ember-view:hover {
+    background-color: #0f1419;
+}
+
+.pagination a.active {
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+}
+
+img.download {
+    width: 20px;
+    height: 21px;
+    content: url(https://crates.io/assets/button-download-ce25ffd7683ff23d3f5dd7931140b1f8.png);
+}
+
+#home-crates.crate-lists img {
+    width: 25px;
+    height: 25px;
+    filter: invert();
+}
+
+.crate.row.ember-view img.download {
+    width: 16px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+div.graph rect {
+    fill: #141920;
+    rx: 4;
+    ry: 4;
+}
+
+div.graph g rect {
+    fill: #191f26;
+}
+
+div.graph text {
+    fill: #c5c5c5;
+}

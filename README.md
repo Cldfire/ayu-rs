@@ -1,19 +1,20 @@
 # ayu-rs
 
-<img src="./ayu-rs_main.png" alt="Demo screenshots, title text">
+<img src="./ayu-rs_main.png" alt="Demo screenshot">
 
 Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the purpose of beautifying various Rustlang websites. It currently supports the following:
 
 * [Docs.rs](https://docs.rs)
 * [doc.rust-lang.org](https://doc.rust-lang.org)
+* [crates.io](https://crates.io/)
 * [play.rust-lang.org](https://play.rust-lang.org/)
   * Make sure you select the `Chrome` theme in the editor in order to use this theme's editor look
-* [play.integer32.com](http://play.integer32.com/)
+* [play.integer32.com](https://play.integer32.com/)
   * Same as above
 
 ## Usage
 
-This theme is meant to be used with something such as [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) (available for most browsers, not just Firefox). If you use Stylish, installation is as simple as going [here](https://userstyles.org/styles/138541/ayu-rs-dark-theme) and clicking the `Install With Stylish` button. It will be applied to the sites that it supports by default (Docs.rs, the Rust standard library docs, book and reference), but it can be used successfully with any hosted rust documentation. You can even integrate it with a created rustdoc [as shown here](https://blog.guillaume-gomez.fr/articles/2016-09-16+Generating+doc+with+rustdoc+and+a+custom+theme).
+This theme is meant to be used with something such as [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) (available for most browsers, not just Firefox). If you use Stylish, installation is as simple as going [here](https://userstyles.org/styles/138541/ayu-rs-dark-theme) and clicking the `Install With Stylish` button. It will be automatically applied to the sites that it supports by default, but it can be used successfully with any hosted rust documentation. You can even integrate it with a created rustdoc [as shown here](https://blog.guillaume-gomez.fr/articles/2016-09-16+Generating+doc+with+rustdoc+and+a+custom+theme).
 
 There are, of course, other extensions / plugins / add-ons that allow you to easily re-skin websites by injecting custom CSS, and if you are a user of one you can simply copy the CSS from this repo and apply it in whatever way your extension requires. If your extension of choice has a site for collecting themes (similar to [userstyles.org](https://userstyles.org)), feel free to open an issue asking to have this theme posted there.
 
