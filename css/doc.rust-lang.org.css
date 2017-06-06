@@ -1,0 +1,187 @@
+/* global scrollbar */
+::-webkit-scrollbar {
+    /* actual width is 2px */
+    width: 5px;
+}
+
+/* global scrollbar thumb (aka the part you see) */
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* hacky way to 'pad' right side */
+    border-right: 3px solid #0f1419;
+}
+
+/* global scrollbar thumb horizontal (aka the part you see) */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #5c6773;
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* more ugly, ugly, ugly hacks */
+    border-bottom: 3px solid #191f26;
+    border-top: 11px solid #191f26;
+}
+
+/* rust logo located top left as well as bottom-right on the root page */
+.sidebar img, div#versioninfo > img {
+    content: url(https://www.rust-lang.org/logos/rust-logo-256x256.png);
+}
+
+/* sticker in bottom-right on doc.rust-lang.org */
+.white-sticker {
+    background-color: transparent;
+}
+
+/* NEW book stuff */
+
+.navy :not(pre) > .hljs {
+    color: #ffb454;
+}
+
+.hljs {
+    background-color: #191f26;
+    border-radius: 4px;
+    color: #e6e1cf;
+}
+
+pre.playpen {
+    background-color: #0f1419;
+}
+
+pre > code {
+    padding: 11px;
+}
+
+.navy .chapter li .active, .navy .chapter li a:hover {
+    color: #0096cf;
+    background-color: transparent;
+}
+
+.navy .sidebar {
+    background-color: #14191f;
+    color: #c5c5c5;
+}
+
+a.header:target {
+    border: none;
+}
+
+a.header:target h1, a.header:target h2, a.header:target h3, a.header:target h4 {
+    background: rgba(255, 52, 52, 0.33);
+    border-right: 3px solid #ffb44c;
+} 
+
+.navy {
+    background-color: #0f1419;
+    color: #c5c5c5;
+}
+
+.navy .content a:link, .navy a:visited {
+    color: #0096cf;
+}
+
+.hljs-keyword, .hljs-literal, .javascript .hljs-function {
+    color: #ff7733;
+}
+
+.hljs-title, .css .hljs-hexcolor {
+    color: #ffb44c;
+}
+
+.hljs-built_in {
+    color: #e6e1cf;
+}
+
+.hljs-comment {
+    color: #5c6773;
+    font-style: italic;
+}
+
+.hljs-number, .hljs-string {
+    color: #b8cc52;
+}
+
+p.warning {
+    color: #ffffff;
+    background: #314559;
+    border: none;
+    border-radius: 4px;
+}
+
+/* OLD book stuff */
+
+blockquote {
+    color: inherit;
+    background-color: rgba(70, 70, 70, 0.33);
+    border-style: none;
+    border-radius: 4px;
+}
+
+/* sidebar */
+#toc {
+    border-style: none;
+    background-color: #0f1419;
+}
+
+/* list items */
+.chapter li a {
+    color: #5c6773;
+}
+
+/* when selected */
+.chapter li a.active {
+    color: #fff;
+}
+
+/* when hovered */
+.chapter li a:hover {
+    color: #fff;
+    background-color: rgba(70, 70, 70, 0.33);
+}
+
+/* space between each item */
+.chapter {
+    line-height: 22px;
+}
+
+/* inherit from above */
+.section {
+    line-height: inherit;
+}
+
+/* fix line numbers for source */
+.content.source {
+    padding-top: 10px;
+}
+
+/* fix border look for line numbers */
+.content.source pre.rust {
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* same as above */
+.content pre.line-numbers {
+    border-radius: 4px 0px 0px 4px;
+}
+
+/* button to show list on small screens (kinda pointless to style but whatever) */
+#toggle-nav {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+/* individual bars */
+#toggle-nav .bar {
+    background-color: #5c6773;
+}
+
+/* on hover */
+#toggle-nav:hover {
+    background-color: rgba(242, 151, 24, 0.05);
+}
+
+#toggle-nav:hover .bar {
+    background-color: #ffb44c;
+}

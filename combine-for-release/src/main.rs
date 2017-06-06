@@ -4,6 +4,7 @@ use std::io::Write;
 
 fn main() {
     let crates_io = include_str!("../../css/crates.io.css");
+    let doc_rust_lang = include_str!("../../css/doc.rust-lang.org.css");
     let crates_io_docs = include_str!("../../css/docs.crates.io.css");
     let docs_rs = include_str!("../../css/docs.rs.css");
     let playground = include_str!("../../css/playground.css");
@@ -17,6 +18,9 @@ fn main() {
                  "\n}\n\n\
                  @-moz-document domain(\"doc.rust-lang.org\"), domain(\"docs.rs\") {\n"
                  + rustdoc +
+                 "\n}\n\n\
+                 @-moz-document domain(\"doc.rust-lang.org\") {\n"
+                 + doc_rust_lang +
                  "\n}\n\n\
                  @-moz-document domain(\"crates.io\") {\n"
                  + crates_io +

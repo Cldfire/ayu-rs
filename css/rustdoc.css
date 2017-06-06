@@ -62,11 +62,6 @@ h4:target code {
     border-top: 11px solid #191f26;
 }
 
-/* rust logo located top left as well as bottom-right on the root page */
-.sidebar img, div#versioninfo > img {
-    content: url(https://www.rust-lang.org/logos/rust-logo-256x256.png);
-}
-
 /* change highlighted text color to look something like ayu */
 ::selection {
     background-color: rgba(37, 51, 64, 0.99);
@@ -212,6 +207,7 @@ div.search-container {
     border-style: none;
     border-top: 1px solid #5c6773;
     margin-bottom: 5px;
+    color: #14191f
 }
 
 em.stab, .stab.deprecated, .stab.unstable {
@@ -300,84 +296,3 @@ pre.rust .comment {
     color: #a37acc;
 }
 
-/* book stuff */
-
-blockquote {
-    color: inherit;
-    background-color: rgba(70, 70, 70, 0.33);
-    border-style: none;
-    border-radius: 4px;
-}
-
-/* sidebar */
-#toc {
-    border-style: none;
-    background-color: #0f1419;
-}
-
-/* list items */
-.chapter li a {
-    color: #5c6773;
-}
-
-/* when selected */
-.chapter li a.active {
-    color: #fff;
-}
-
-/* when hovered */
-.chapter li a:hover {
-    color: #fff;
-    background-color: rgba(70, 70, 70, 0.33);
-}
-
-/* space between each item */
-.chapter {
-    line-height: 22px;
-}
-
-/* inherit from above */
-.section {
-    line-height: inherit;
-}
-
-/* fix line numbers for source */
-.content.source {
-    padding-top: 10px;
-}
-
-/* fix border look for line numbers */
-.content.source pre.rust {
-    border-radius: 0px 4px 4px 0px;
-}
-
-/* same as above */
-.content pre.line-numbers {
-    border-radius: 4px 0px 0px 4px;
-}
-
-/* button to show list on small screens (kinda pointless to style but whatever) */
-#toggle-nav {
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-}
-
-/* individual bars */
-#toggle-nav .bar {
-    background-color: #5c6773;
-}
-
-/* on hover */
-#toggle-nav:hover {
-    background-color: rgba(242, 151, 24, 0.05);
-}
-
-#toggle-nav:hover .bar {
-    background-color: #ffb44c;
-}
-
-/* sticker in bottom-right on doc.rust-lang.org */
-.white-sticker {
-    background-color: transparent;
-}
