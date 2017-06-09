@@ -33,7 +33,7 @@
     background-color: transparent;
 }
 
-/* NEW book stuff */
+/* NEW book stuff (rendered by mdBook) */
 
 .navy :not(pre) > .hljs {
     color: #ffb454;
@@ -93,7 +93,7 @@ a.header:target h1, a.header:target h2, a.header:target h3, a.header:target h4 {
     color: #e6e1cf;
 }
 
-.hljs-comment {
+.hljs-comment, .hljs-meta {
     color: #5c6773;
     font-style: italic;
 }
