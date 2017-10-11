@@ -110,34 +110,34 @@ main, .playground-editor {
     border-radius: 0px;
 }
 
-.ace-chrome {
+.ace_editor {
     background-color: #0f1419;
     color: #e6e1cf;
 }
 
-.ace-chrome .ace_gutter {
+.ace_editor .ace_gutter {
     background: transparent;
     color: #2d3640;
     font-family: "Roboto Mono"
 }
 
-.ace-chrome .ace_gutter-active-line {
+.ace_editor.ace_focus .ace_marker-layer .ace_active-line {
     background-color: rgba(70, 70, 70, 0.25);
 }
 
-.ace-chrome .ace_marker-layer .ace_selection {
+.ace_editor .ace_marker-layer .ace_selection {
     background-color: rgba(37, 51, 64, 0.99);
 }
 
-.ace-chrome .ace_cursor {
+.ace_editor .ace_cursor {
     color: #f29718;
 }
 
-.ace-chrome .ace_print-margin {
+.ace_editor.ace_print-margin {
     visibility: hidden !important;
 }
 
-.ace-chrome .ace_marker-layer .ace_active-line {
+.ace_editor .ace_marker-layer .ace_active-line {
     background: #14191f;
 }
 
@@ -158,44 +158,44 @@ main, .playground-editor {
 
 /* look of code */
 
-.ace-chrome .ace_keyword.ace_operator {
+.ace_editor .ace_keyword.ace_operator {
     color: #ff7733;
 }
 
-.ace-chrome .ace_support.ace_constant {
+.ace_editor .ace_support.ace_constant {
     color: #e6e1cf;
 }
 
-.ace-chrome .ace_string, .ace-chrome .ace_constant.ace_numeric {
+.ace_editor .ace_string, .ace-chrome .ace_constant.ace_numeric {
     color: #b8cc52;
 }
 
-.ace-chrome .ace_storage, .ace-chrome .ace_keyword, .ace-chrome .ace_meta.ace_tag {
+.ace_editor .ace_storage, .ace-chrome .ace_keyword, .ace-chrome .ace_meta.ace_tag {
     color: #ff7733;
 }
 
-.ace-chrome .ace_entity.ace_name.ace_function {
+.ace_editor .ace_entity.ace_name.ace_function {
     color: #ffb454;
 }
 
-.ace-chrome .ace_punctuation {
+.ace_editor .ace_punctuation {
     color: #ff7733;
 }
 
-.ace-chrome .ace_comment {
+.ace_editor .ace_comment {
     color: #5c6773;
     font-style: italic;
 }
 
-.ace-chrome .ace_constant.ace_language {
+.ace_editor .ace_constant.ace_language {
     color: #ff7733;
 }
 
-.ace-chrome .ace_variable {
+.ace_editor .ace_variable {
     color: #ff7733;
 }
 
-.ace-chrome .ace_indent-guide {
+.ace_editor .ace_indent-guide {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNQUFD4z6Crq/sfAAuYAuYl+7lfAAAAAElFTkSuQmCC) right repeat-y;
 }
 
