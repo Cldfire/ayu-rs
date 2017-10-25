@@ -62,6 +62,10 @@ h1, h2, h3, h4 {
     color: #5c6773;
 }
 
+#header span.subtitle {
+    color: #5c6773;
+}
+
 .after-main-links a {
     color: #c5c5c5;
 }
@@ -92,7 +96,7 @@ h1, h2, h3, h4 {
     color: #c5c5c5;
 }
 
-#crate-links, #me-profile {
+#crate-links, #me-profile, #me-email {
     border-bottom: 1px solid #5c6773;
 }
 
@@ -223,6 +227,22 @@ a.fork-me > img {
     visibility: hidden;
 }
 
+.crate-info .crate-readme p code {
+    border-radius: 3px;
+    padding: 0 0.2em;
+    background-color: #191f26;
+    color: #ffb454;
+}
+
+code[class*=language-], pre[class*=language-] {
+    border: none;
+    box-shadow: none;
+    text-shadow: none !important;
+    background-color: #191f26;
+    border-radius: 4px;
+    color: #e6e1cf;
+}
+
 #results span.amt {
     color: #c5c5c5;
 }
@@ -231,7 +251,7 @@ a.fork-me > img {
     color: #ffffff;
 }
 
-.white-rows {
+.white-rows, #tokens .row {
     background-color: #0f1419;
 }
 
@@ -253,7 +273,7 @@ a.fork-me > img {
     font-family: "Roboto Mono";
     font-size: 90%;
     color: #5c6773 !important;
-    border-radius: 4px;
+    border-radius: 4px !important;
     font-weight: 400;
     background: none;
     background-color: rgba(255, 255, 255, 0);
