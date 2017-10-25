@@ -4,6 +4,8 @@ use std::io::Write;
 
 fn main() {
     let crates_io = include_str!("../../css/crates.io.css");
+    let www_rust_lang = include_str!("../../css/www.rust-lang.org.css");
+    let rustbyexample = include_str!("../../css/rustbyexample.com.css");
     let doc_rust_lang = include_str!("../../css/doc.rust-lang.org.css");
     let crates_io_docs = include_str!("../../css/docs.crates.io.css");
     let docs_rs = include_str!("../../css/docs.rs.css");
@@ -27,6 +29,12 @@ fn main() {
                  "\n}\n\n\
                  @-moz-document domain(\"doc.crates.io\") {\n"
                  + crates_io_docs +
+                 "\n}\n\n\
+                 @-moz-document domain(\"www.rust-lang.org\") {\n"
+                 + www_rust_lang +
+                 "\n}\n\n\
+                 @-moz-document domain(\"rustbyexample.com\") {\n"
+                 + rustbyexample +
                  "\n}";
 
     let file = File::create("ayu-rs_release.css").expect("file");
