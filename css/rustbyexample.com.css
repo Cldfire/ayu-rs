@@ -1,0 +1,104 @@
+/* ace editor (edited version of playground theme) */
+
+body.ayu .ace-tomorrow-night {
+    padding-bottom: 20px;
+    background-color: #191f26;
+    color: #e6e1cf;
+    font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    font-size: 0.875em;
+    padding-bottom: 0px;
+}
+
+body.ayu .ace-tomorrow-night .ace_gutter {
+    background: transparent;
+    color: #2d3640;
+    font-family: "Roboto Mono"
+}
+
+body.ayu .ace-tomorrow-night .ace_gutter-active-line {
+    background-color: rgba(70, 70, 70, 0.25);
+}
+
+body.ayu .ace-tomorrow-night .ace_marker-layer .ace_selection {
+    background-color: rgba(37, 51, 64, 0.99);
+}
+
+body.ayu .ace-tomorrow-night .ace_cursor {
+    color: #f29718;
+}
+
+body.ayu .ace-tomorrow-night .ace_print-margin {
+    visibility: hidden !important;
+}
+
+body.ayu .ace-tomorrow-night .ace_marker-layer .ace_active-line {
+    background: #14191f;
+}
+
+/* global scrollbar */
+::-webkit-scrollbar {
+    /* actual width is 2px */
+    width: 5px;
+}
+
+/* global scrollbar thumb (aka the part you see) */
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* hacky way to 'pad' right side */
+    border-right: 3px solid #0f1419;
+}
+
+/* global scrollbar thumb horizontal (aka the part you see) */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #5c6773; 
+    /* doesn't look right because of below hack */
+    border-radius: 4px;
+    /* more ugly, ugly, ugly hacks */
+    border-bottom: 3px solid #191f26;
+    border-top: 11px solid #191f26;
+}
+
+/* syntax colors */
+
+body.ayu .ace-tomorrow-night .ace_keyword.ace_operator {
+    color: #ff7733;
+}
+
+body.ayu .ace-tomorrow-night .ace_support.ace_constant {
+    color: #e6e1cf;
+}
+
+body.ayu .ace-tomorrow-night .ace_string, body.ayu .ace-tomorrow-night .ace_constant.ace_numeric {
+    color: #b8cc52;
+}
+
+body.ayu .ace-tomorrow-night .ace_storage, body.ayu .ace-tomorrow-night .ace_keyword, body.ayu .ace-tomorrow-night .ace_meta.ace_tag {
+    color: #ff7733;
+}
+
+body.ayu .ace-tomorrow-night .ace_entity.ace_name.ace_function {
+    color: #ffb454;
+}
+
+body.ayu .ace-tomorrow-night .ace_punctuation {
+    color: #ff7733;
+}
+
+body.ayu .ace-tomorrow-night .ace_comment {
+    color: #5c6773;
+    font-style: italic;
+}
+
+body.ayu .ace-tomorrow-night .ace_constant.ace_language {
+    color: #ff7733;
+}
+
+body.ayu .ace-tomorrow-night .ace_variable {
+    color: #ff7733;
+}
+
+body.ayu .ace-tomorrow-night .ace_indent-guide {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNQUFD4z6Crq/sfAAuYAuYl+7lfAAAAAElFTkSuQmCC) right repeat-y;
+}
