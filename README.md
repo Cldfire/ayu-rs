@@ -1,5 +1,7 @@
 # ayu-rs
 
+**Install using [Stylish](https://userstyles.org/styles/138541/ayu-rs-dark-theme)**
+
 ![demo screenshot](./ayu-rs_main.png)
 
 Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the purpose of beautifying various Rustlang websites. It currently supports the following:
