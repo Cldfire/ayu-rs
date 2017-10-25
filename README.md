@@ -7,7 +7,10 @@ Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the 
 * [Docs.rs](https://docs.rs/)
 * [www.rust-lang.org](https://www.rust-lang.org/)
 * [doc.rust-lang.org](https://doc.rust-lang.org/)
-  * **If you are reading the book version** that is rendered with [mdBook](https://github.com/azerupi/mdBook) **you must have the `Navy` theme selected** for this theme to apply.
+  * **If you are reading the book version** that is rendered with [mdBook](https://github.com/azerupi/mdBook) **you must have the `Navy` theme selected** for this theme to apply
+  * Rust 1.22.0 should natively include the Ayu theme for the book. Then you can view it in this colorscheme on any device :)
+* [rustbyexample.com](https://rustbyexample.com/)
+  * Note that this site natively provides the Ayu theme, except for the Ace editor; the CSS in this repo fixes that
 * [crates.io](https://crates.io/)
 * [play.rust-lang.org](https://play.rust-lang.org/)
   * Make sure you select the `Chrome` theme in the editor in order to use this theme's editor look
