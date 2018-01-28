@@ -18,7 +18,7 @@ fn main() {
                  @-moz-document domain(\"play.rust-lang.org\"), domain(\"play.integer32.com\") {\n"
                  + playground +
                  "\n}\n\n\
-                 @-moz-document domain(\"doc.rust-lang.org\"), domain(\"docs.rs\") {\n"
+                 @-moz-document domain(\"doc.rust-lang.org\"), domain(\"docs.rs\") url-prefix(\"https://manishearth.github.io/rust-internals-docs/\") {\n"
                  + rustdoc +
                  "\n}\n\n\
                  @-moz-document domain(\"doc.rust-lang.org\") {\n"
