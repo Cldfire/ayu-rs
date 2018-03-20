@@ -96,6 +96,16 @@ h1, h2, h3, h4 {
     color: #c5c5c5;
 }
 
+#my-feed .load-more {
+    background-color: transparent;
+    color: #c5c5c5;
+}
+
+#my-feed .load-more:hover {
+    background-color: rgba(242, 151, 24, 0.05);
+    color: #ffb44c;
+}
+
 #crate-links, #me-profile, #me-email {
     border-bottom: 1px solid #5c6773;
 }
