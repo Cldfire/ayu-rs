@@ -1,0 +1,72 @@
+body {
+    background-color: #0f1419;
+    color: #c5c5c5;
+}
+
+.site-header {
+    border-top: none;
+    border-bottom: 1px solid #5c6773;
+}
+
+body > footer {
+    border-top: 1px solid #5c6773;
+}
+
+.site-title {
+    color: #fff !important;
+}
+
+.past-issues li.nav-header h2 {
+    border-bottom: 1px solid #5c6773;
+}
+
+input.form-control {
+    color: #ffffff;
+    background-color: #141920;
+    box-shadow: none;
+    transition: box-shadow 150ms ease-in-out;
+    border: none;
+    border-radius: 4px;
+}
+
+input.form-control:focus {
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #fff;
+}
+
+code {
+    border: none;
+    border-radius: 3px;
+    padding: 0 0.2em;
+    color: #ffb454;
+    background-color: #191f26;
+}
+
+blockquote {
+    border-left-color: #5c6773;
+    color: inherit;
+}
+
+a {
+    color: #0096cf;
+}
+
+a:visited {
+    color: #005d81;
+}
+
+a:hover {
+    color: #0096cf;
+    text-decoration: underline;
+}
+
+body > footer a:visited {
+    color: #0096cf;
+}
+
+.post-header a:visited {
+    color: #0096cf;
+}
