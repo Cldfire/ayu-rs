@@ -4,7 +4,7 @@
 
 ![demo screenshot](./ayu-rs_main.png)
 
-**<center>As seen on <a href="https://www.youtube.com/watch?v=7VulqInDO6Y">YouTube</a></center>**
+**<p align="center">As seen on <a href="https://www.youtube.com/watch?v=7VulqInDO6Y">YouTube</a></p>**
 
 Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the purpose of beautifying various Rustlang websites. It currently supports the following:
 
