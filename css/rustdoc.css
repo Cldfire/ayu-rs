@@ -104,7 +104,7 @@ div.theme-picker {
 
 .tooltip .tooltiptext {
     color: #c5c5c5 !important;
-    background-color: #14191f !important;
+    background-color: #314559 !important;
     border: 1px solid #5c6773 !important;
 }
 
@@ -248,7 +248,7 @@ div.search-container {
     border-style: none;
     border-top: 1px solid #5c6773;
     margin-bottom: 5px;
-    color: #14191f
+    color: #14191f !important;
 }
 
 em.stab, .stab.deprecated, .stab.unstable {

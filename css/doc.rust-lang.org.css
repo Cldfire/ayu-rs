@@ -26,6 +26,7 @@
 /* rust logo located top left as well as bottom-right on the root page */
 .sidebar img, div#versioninfo > img {
     content: url(https://www.rust-lang.org/logos/rust-logo-256x256.png);
+    margin-top: 30px;
 }
 
 /* sticker in bottom-right on doc.rust-lang.org */

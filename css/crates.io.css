@@ -127,7 +127,7 @@ div.exact-match {
     border-bottom: 1px solid #5c6773;
 }
 
-div.exact-match > h1 {
+div.exact-match h1 {
     margin-bottom: 5px;
     color: #ffffff;
 }
@@ -305,6 +305,10 @@ code[class*=language-], pre[class*=language-] {
 .crate-info .install code {
     background-color: #191f26;
     color: #e6e1cf;
+}
+
+#crates a img {
+    color: #c5c5c5;
 }
 
 .crate .info a {

@@ -8,7 +8,8 @@ a {
 }
 
 header img {
-    content: url(https://www.rust-lang.org/logos/rust-logo-256x256.png);
+    content: url(https://www.rust-lang.org/logos/rust-logo-blk.svg);
+    filter: invert(100%);
 }
 
 footer {

@@ -326,14 +326,13 @@ a.token.error-location {
 }
 
 p.help__logo {
-    -webkit-margin-before: 1.5em;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
 
 p.help__logo img {
-    -webkit-margin-before: 2em;
-    -webkit-margin-after: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 code.help__code, pre.help__code {
