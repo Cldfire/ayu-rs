@@ -4,9 +4,11 @@
 
 ![demo screenshot](./ayu-rs_main.png)
 
+**<center>As seen on <a href="https://www.youtube.com/watch?v=7VulqInDO6Y">YouTube</a></center>**
+
 Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the purpose of beautifying various Rustlang websites. It currently supports the following:
 
-* [Docs.rs](https://docs.rs/)
+* [docs.rs](https://docs.rs/)
 * [www.rust-lang.org](https://www.rust-lang.org/)
 * [doc.rust-lang.org](https://doc.rust-lang.org/)
   * **If you are reading the book version** that is rendered with [mdBook](https://github.com/azerupi/mdBook) **you must have the `Navy` theme selected** for this theme to apply
@@ -18,6 +20,7 @@ Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the 
   * Make sure you select the `Chrome` theme in the editor in order to use this theme's editor look
 * [play.integer32.com](https://play.integer32.com/)
   * Same as above
+* [this-week-in-rust.org](https://this-week-in-rust.org/)
 
 ## Usage
 
