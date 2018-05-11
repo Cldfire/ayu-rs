@@ -5,7 +5,7 @@ use std::io::Write;
 fn main() {
     let crates_io = include_str!("../../css/crates.io.css");
     let www_rust_lang = include_str!("../../css/www.rust-lang.org.css");
-    let rustbyexample = include_str!("../../css/rustbyexample.com.css");
+    let rustbyexample = include_str!("../../css/rustbyexample.css");
     let doc_rust_lang = include_str!("../../css/doc.rust-lang.org.css");
     let crates_io_docs = include_str!("../../css/docs.crates.io.css");
     let docs_rs = include_str!("../../css/docs.rs.css");
@@ -34,7 +34,7 @@ fn main() {
                  @-moz-document domain(\"www.rust-lang.org\") {\n"
                  + www_rust_lang +
                  "\n}\n\n\
-                 @-moz-document domain(\"rustbyexample.com\") {\n"
+                 @-moz-document url-prefix(\"https://doc.rust-lang.org/rust-by-example\") {\n"
                  + rustbyexample +
                  "\n}\n\n\
                  @-moz-document domain(\"this-week-in-rust.org\") {\n"
