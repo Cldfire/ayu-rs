@@ -70,3 +70,70 @@ body > footer a:visited {
 .post-header a:visited {
     color: #0096cf;
 }
+
+
+/*DeltaManiac : Customized*/
+.highlight {
+    background-color:#191f26;
+}
+
+pre,code {
+    background-color:#191f26;
+    color:#e6e1cf;
+}
+
+.highlight .k{
+    color:#ff7733 !important;
+}
+
+.highlight .o{
+    color:#e6e1cf;
+}
+
+.highlight .k{
+    color:#ffb454;
+}
+
+.highlight .nv{
+    color:#ff7733;
+}
+
+.highlight .nf{
+    color:#ffb44c;
+    font-weight:normal;
+}
+
+.highlight .n{
+    color:#e6e1cf;
+}
+
+.highlight .nn{
+    color:#e6e1cf;
+}
+
+.highlight .mi{
+    color:#ffb454;
+}
+
+.highlight .mf{
+    color:#e6e1cf;
+}
+
+.highlight .s{
+    color:#ffb454;
+}
+
+.highlight .p{
+    color:#e6e1cf !important;
+}
+
+.highlight .nd{
+    color:#e6e1cf !important;
+}
+.highlight .nb{
+    color:#ff7733 !important;
+}
+
+#site-logo {
+        filter: invert(100%);
+}
