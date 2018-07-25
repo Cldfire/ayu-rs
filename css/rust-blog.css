@@ -1,0 +1,176 @@
+body {
+    background-color: #0f1419;
+    color: #c5c5c5;
+}
+
+.site-header {
+    border-top: none;
+    border-bottom: 1px solid #5c6773;
+}
+
+body > footer {
+    border-top: 1px solid #5c6773;
+}
+
+.site-title {
+    color: #fff !important;
+}
+
+.past-issues li.nav-header h2 {
+    border-bottom: 1px solid #5c6773;
+}
+
+input.form-control {
+    color: #ffffff;
+    background-color: #141920;
+    box-shadow: none;
+    transition: box-shadow 150ms ease-in-out;
+    border: none;
+    border-radius: 4px;
+}
+
+input.form-control:focus {
+    box-shadow: 0px 6px 20px 0px black;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #fff;
+}
+
+code {
+    border: none;
+    border-radius: 3px;
+    padding: 0 0.2em;
+    color: #ffb454;
+    background-color: #191f26;
+}
+
+blockquote {
+    border-left-color: #5c6773;
+    color: inherit;
+}
+
+a {
+    color: #0096cf;
+}
+
+a:visited {
+    color: #005d81;
+}
+
+a:hover {
+    color: #0096cf;
+    text-decoration: underline;
+}
+
+body > footer a:visited {
+    color: #0096cf;
+}
+
+.post-header a:visited {
+    color: #0096cf;
+}
+
+/* Syntax Highlighting */
+.highlight {
+    background-color: #191f26;
+    border: none;
+}
+
+pre > code {
+    background-color: #191f26;
+    color:#e6e1cf;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+/* Operator */
+.highlight .o{
+    color:#ff7733;
+}
+
+/* Constant */
+.highlight .kc{
+    color:#e6e1cf;
+}
+
+/* Keyword */
+.highlight .k{
+    color:#ff7733;
+}
+
+/* String */
+.highlight .s,
+.highlight .sb, 
+.highlight .sc, 
+.highlight .sd,
+.highlight .s2,
+.highlight .se, 
+.highlight .sh, 
+.highlight .si, 
+.highlight .sx, 
+.highlight .sr, 
+.highlight .s1, 
+.highlight .ss
+{
+    color: #b8cc52;
+}
+
+/* Numerics */
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo
+.highlight .il
+{
+   color: #b8cc52;
+}
+
+
+/* Tag */
+.highlight .nt{
+    color:#ff7733;
+}
+
+/* Function */
+.highlight .nf{
+    color:#ffb454;
+}
+/*Punctuaiton  */
+.highlight .p{
+    color:#e6e1cf;
+}
+/* Comment */
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs
+{
+    color: #5c6773;
+    font-style: italic;
+}
+
+/* Variable */
+.highlight .nv{
+    color:#ff7733;
+}
+
+/******************************MISC*******************************/
+
+/*NameSpace*/
+.highlight .nn{
+    color:#e6e1cf;
+}
+/*Builtin*/
+.highlight .nb{
+    color:#ff7733 !important;
+}
+
+/*Invert Logo Color */
+#site-logo { 
+        filter: invert(100%);
+}
