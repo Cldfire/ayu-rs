@@ -11,7 +11,7 @@ fn main() {
     let docs_rs = include_str!("../../css/docs.rs.css");
     let playground = include_str!("../../css/playground.css");
     let rustdoc = include_str!("../../css/rustdoc.css");
-    let twir = include_str!("../../css/twir.css");
+    let rust_blog = include_str!("../../css/rust-blog.css");
 
     let output = "@-moz-document domain(\"docs.rs\") {\n".to_owned()
                  + docs_rs +
@@ -37,8 +37,8 @@ fn main() {
                  @-moz-document url-prefix(\"https://doc.rust-lang.org/rust-by-example\") {\n"
                  + rustbyexample +
                  "\n}\n\n\
-                 @-moz-document domain(\"this-week-in-rust.org\") {\n"
-                 + twir +
+                 @-moz-document domain(\"this-week-in-rust.org\"), domain(\"blog.rust-lang.org\") {\n"
+                 + rust_blog +
                  "\n}";
 
     let file = File::create("ayu-rs_release.css").expect("file");

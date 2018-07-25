@@ -73,12 +73,17 @@ body > footer a:visited {
 
 /* Syntax Highlighting */
 .highlight {
-    background-color:#0f1419;
+    background-color: #191f26;
+    border: none;
 }
 
-pre,code {
-    background-color:#0f1419;
+pre > code {
+    background-color: #191f26;
     color:#e6e1cf;
+}
+
+pre {
+    overflow-x: auto;
 }
 
 /* Operator */
