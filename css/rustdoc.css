@@ -37,6 +37,28 @@ h4:target code {
     background: inherit;
 }
 
+input:checked + .slider {
+    background-color: #ffb454;
+}
+
+#all-types {
+    background-color: #141920;
+    color: #fff;
+}
+
+#all-types:hover {
+    background-color: rgba(70, 70, 70, 0.33);
+}
+
+#settings-menu {
+    margin-top: 3px;
+    background-color: #141920;
+}
+
+#settings-menu > img {
+    filter: invert(100);
+}
+
 /* global scrollbar */
 ::-webkit-scrollbar {
     /* actual width is 2px */
@@ -239,7 +261,7 @@ div.search-container {
 }
 
 /* code in between backticks */
-.docblock code, .docblock-short code {
+.docblock p > code, .docblock-short p > code, .docblock a > code {
     background-color: #191f26;
 }
 
