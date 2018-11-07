@@ -161,11 +161,6 @@ blockquote {
     border-radius: 0px 4px 4px 0px;
 }
 
-/* same as above */
-.content pre.line-numbers {
-    border-radius: 4px 0px 0px 4px;
-}
-
 /* button to show list on small screens (kinda pointless to style but whatever) */
 #toggle-nav {
     border-radius: 4px;

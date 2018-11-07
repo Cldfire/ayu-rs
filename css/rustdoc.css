@@ -21,11 +21,6 @@ nav {
     margin-bottom: 8px;
 }
 
-/* help position search bar correctly */
-.content {
-    padding: 0px;
-}
-
 /* selected thing (function, method, etc.) */
 :target {
     background: rgba(255, 52, 52, 0.33);
@@ -90,8 +85,17 @@ input:checked + .slider {
 }
 
 /* fix sidebar */
-.sidebar {
+.sidebar, .source .sidebar {
     background-color: #0f1419;
+}
+
+.line-numbers span {
+    color: #5c67736e; 
+}
+
+.line-numbers .line-highlighted {
+    background-color: rgba(255, 52, 52, 0.16) !important;
+    border-right: 2px solid #ffb44c;
 }
 
 /* top left thing on sidebar */
@@ -293,8 +297,12 @@ em.stab, .stab.deprecated, .stab.unstable {
 /* code blocks */
 pre {
     background-color: #191f26;
-    border-radius: 4px;
     color: #e6e1cf;
+}
+
+/* code blocks not on a `src` page */
+body:not(.source) pre {
+    border-radius: 4px;
 }
 
 /* `#[]` */
@@ -363,4 +371,3 @@ pre.rust .comment {
 .content span.macro, .content a.macro, .block a.current.macro, pre.rust .macro, pre.rust .macro-nonterminal {
     color: #a37acc;
 }
-
