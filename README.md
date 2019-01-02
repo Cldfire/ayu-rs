@@ -9,7 +9,6 @@
 Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the purpose of beautifying various Rustlang websites. It currently supports the following:
 
 * [docs.rs](https://docs.rs/)
-* [www.rust-lang.org](https://www.rust-lang.org/)
 * [doc.rust-lang.org](https://doc.rust-lang.org/)
   * **If you are reading the book version** that is rendered with [mdBook](https://github.com/azerupi/mdBook) **you must have the `Navy` theme selected** for this theme to apply
   * The Ayu theme is natively included for the book in Rust 1.22.0 and up, so this theme is mostly irrelevant now as far as the book is concerned.
