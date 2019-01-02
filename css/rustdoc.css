@@ -249,7 +249,7 @@ a.current {
 .search-input {
     color: #ffffff;
     background-color: #141920;
-    box-shadow: none;
+    box-shadow: none !important;
     transition: box-shadow 150ms ease-in-out;
     border-radius: 4px;
     margin-left: 8px;
@@ -259,7 +259,7 @@ a.current {
 /* when typing in it */
 .search-input:focus {
     border-radius: 4px;
-    box-shadow: 0px 6px 20px 0px black;
+    box-shadow: 0px 6px 20px 0px black !important;
 }
 
 /* crate search selector button */
@@ -289,10 +289,10 @@ div.search-container {
     border-style: none;
     border-top: 1px solid #5c6773;
     margin-bottom: 5px;
-    color: #14191f !important;
+    color: #c5c5c5 !important;
 }
 
-em.stab, .stab.deprecated, .stab.unstable {
+em.stab, .stab.deprecated, .stab.unstable, .stab.portability {
     background: #314559 !important;
     border-style: none !important;
     border-radius: 4px;
