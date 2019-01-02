@@ -268,7 +268,7 @@ div.search-container {
 
 /* code in between backticks */
 .docblock code, .docblock-short code {
-    background-color: #191f26;
+    background-color: #191f26 !important;
 }
 
 /* stability notes (such as unstable) */
