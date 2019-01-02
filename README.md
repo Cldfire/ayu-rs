@@ -20,7 +20,6 @@ Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the 
 * [play.integer32.com](https://play.integer32.com/)
   * Same as above
 * [this-week-in-rust.org](https://this-week-in-rust.org/)
-* [blog.rust-lang.org](https://blog.rust-lang.org/)
 
 ## Usage
 
