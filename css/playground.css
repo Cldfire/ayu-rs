@@ -64,9 +64,10 @@ div.segmented-button .segmented-button__button:hover {
 	background: rgba(242, 151, 24, 0.05);
 }
 
-/* button.segmented-button__button--build {
-    color: #ffb44c !important;
-} */
+.build-menu__code {
+    background: #191f26;
+    color: #ffb454;
+}
 
 /* code editor itself */
 
