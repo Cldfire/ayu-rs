@@ -135,6 +135,7 @@ div.theme-picker {
 }
 
 #titles > div.selected {
+    background-color: #141920 !important;
     border-bottom: 1px solid #ffb44c !important;
 }
 
@@ -143,6 +144,7 @@ div.theme-picker {
 }
 
 #titles > div {
+    background-color: transparent !important;
     border: none;
 }
 
