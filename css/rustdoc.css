@@ -383,6 +383,6 @@ pre.rust .comment {
 }
 
 /* macro name color */
-.content span.macro, .content a.macro, .block a.current.macro, pre.rust .macro, pre.rust .macro-nonterminal {
+.content span.attr, .content a.attr, .block a.current.attr, .content span.derive, .content a.derive, .block a.current.derive, .content span.macro, .content a.macro, .block a.current.macro {
     color: #a37acc;
 }
