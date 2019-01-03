@@ -16,7 +16,7 @@ div.warning {
 }
 
 .in-band, code {
-    background-color: #191f26;
+    background-color: inherit;
     border-radius: 4px;
 }
 
