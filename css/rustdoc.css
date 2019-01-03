@@ -241,7 +241,7 @@ a.current {
 }
 
 /* I don't remember, other than that this is the color for URLs */
-.docblock a, .docblock-short a, .stability a {
+.docblock:not(.type-decl) a:not(.srclink):not(.test-arrow), .docblock-short a:not(.srclink):not(.test-arrow), .stability a {
     color: #0096cf;
 }
 
