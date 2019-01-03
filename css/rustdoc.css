@@ -170,7 +170,7 @@ p.location {
 h1, h2, h3:not(.impl):not(.method):not(.type):not(.tymethod), h4:not(.method):not(.type):not(.tymethod), 
 h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited {
     color: white;
-    border-bottom-color: #5c6773;
+    border-bottom-color: #5c6773 !important;
 }
 
 /* fixes things related to code backing */
