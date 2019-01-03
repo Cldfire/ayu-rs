@@ -315,6 +315,14 @@ pre {
     color: #e6e1cf;
 }
 
+/* line numbers in front of code blocks */
+.example-wrap > pre.line-number {
+    color: #5c67736e;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 /* code blocks not on a `src` page */
 body:not(.source) pre {
     border-radius: 4px;
