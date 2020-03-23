@@ -131,19 +131,22 @@ div.package-page-container div.package-menu a.pure-menu-link {
 }
 
 .pure-button {
-    font-family: "Roboto Mono";
     font-size: 90%;
     color: #5c6773;
     border-radius: 4px;
     font-weight: 400;
 }
 
-div.nav-container form.landing-search-form-nav input.search-input-nav {
+div.nav-container form.landing-search-form-nav #search-input-nav input {
     background-color: #0f1419;
 }
 
-div.nav-container form.landing-search-form-nav input.search-input-nav:focus {
+div.nav-container form.landing-search-form-nav #search-input-nav input:focus {
     color: #fff;
+}
+
+div.nav-container form.landing-search-form-nav #search-input-nav {
+    border-left-color: #5c6773;
 }
 
 .pure-u-1.pure-u-sm-17-24.pure-u-md-19-24 {
