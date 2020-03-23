@@ -1,6 +1,6 @@
 /* ace editor (edited version of playground theme) */
 
-body.ayu .ace-tomorrow-night {
+html.ayu .ace-tomorrow-night {
     background-color: #191f26;
     color: #e6e1cf;
     font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
@@ -8,29 +8,29 @@ body.ayu .ace-tomorrow-night {
     padding-bottom: 0px;
 }
 
-body.ayu .ace-tomorrow-night .ace_gutter {
+html.ayu .ace-tomorrow-night .ace_gutter {
     background: transparent;
     color: #2d3640;
     font-family: "Roboto Mono"
 }
 
-body.ayu .ace-tomorrow-night .ace_gutter-active-line {
+html.ayu .ace-tomorrow-night .ace_gutter-active-line {
     background-color: rgba(70, 70, 70, 0.25);
 }
 
-body.ayu .ace-tomorrow-night .ace_marker-layer .ace_selection {
+html.ayu .ace-tomorrow-night .ace_marker-layer .ace_selection {
     background-color: rgba(37, 51, 64, 0.99);
 }
 
-body.ayu .ace-tomorrow-night .ace_cursor {
+html.ayu .ace-tomorrow-night .ace_cursor {
     color: #f29718;
 }
 
-body.ayu .ace-tomorrow-night .ace_print-margin {
+html.ayu .ace-tomorrow-night .ace_print-margin {
     visibility: hidden !important;
 }
 
-body.ayu .ace-tomorrow-night .ace_marker-layer .ace_active-line {
+html.ayu .ace-tomorrow-night .ace_marker-layer .ace_active-line {
     background: #14191f;
 }
 
@@ -61,43 +61,43 @@ body.ayu .ace-tomorrow-night .ace_marker-layer .ace_active-line {
 
 /* syntax colors */
 
-body.ayu .ace-tomorrow-night .ace_keyword.ace_operator {
+html.ayu .ace-tomorrow-night .ace_keyword.ace_operator {
     color: #ff7733;
 }
 
-body.ayu .ace-tomorrow-night .ace_support.ace_constant {
+html.ayu .ace-tomorrow-night .ace_support.ace_constant {
     color: #e6e1cf;
 }
 
-body.ayu .ace-tomorrow-night .ace_string, body.ayu .ace-tomorrow-night .ace_constant.ace_numeric {
+html.ayu .ace-tomorrow-night .ace_string, html.ayu .ace-tomorrow-night .ace_constant.ace_numeric {
     color: #b8cc52;
 }
 
-body.ayu .ace-tomorrow-night .ace_storage, body.ayu .ace-tomorrow-night .ace_keyword, body.ayu .ace-tomorrow-night .ace_meta.ace_tag {
+html.ayu .ace-tomorrow-night .ace_storage, html.ayu .ace-tomorrow-night .ace_keyword, html.ayu .ace-tomorrow-night .ace_meta.ace_tag {
     color: #ff7733;
 }
 
-body.ayu .ace-tomorrow-night .ace_entity.ace_name.ace_function {
+html.ayu .ace-tomorrow-night .ace_entity.ace_name.ace_function {
     color: #ffb454;
 }
 
-body.ayu .ace-tomorrow-night .ace_punctuation {
+html.ayu .ace-tomorrow-night .ace_punctuation {
     color: #ff7733;
 }
 
-body.ayu .ace-tomorrow-night .ace_comment {
+html.ayu .ace-tomorrow-night .ace_comment {
     color: #5c6773;
     font-style: italic;
 }
 
-body.ayu .ace-tomorrow-night .ace_constant.ace_language {
+html.ayu .ace-tomorrow-night .ace_constant.ace_language {
     color: #ff7733;
 }
 
-body.ayu .ace-tomorrow-night .ace_variable {
+html.ayu .ace-tomorrow-night .ace_variable {
     color: #ff7733;
 }
 
-body.ayu .ace-tomorrow-night .ace_indent-guide {
+html.ayu .ace-tomorrow-night .ace_indent-guide {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNQUFD4z6Crq/sfAAuYAuYl+7lfAAAAAElFTkSuQmCC) right repeat-y;
 }

@@ -30,7 +30,7 @@ fn main() {
                  @-moz-document domain(\"doc.crates.io\") {\n"
                  + crates_io_docs +
                  "\n}\n\n\
-                 @-moz-document url-prefix(\"https://doc.rust-lang.org/rust-by-example\") {\n"
+                 @-moz-document regexp('https://doc\\.rust-lang\\.org(/.*/|/)rust-by-example/.*') {\n"
                  + rustbyexample +
                  "\n}\n\n\
                  @-moz-document domain(\"this-week-in-rust.org\") {\n"
