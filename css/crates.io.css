@@ -110,16 +110,23 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid #5c6773;
 }
 
-.crate-info .install button, .crate-info .install button:active {
+[class^="_crate-info_"] [class^="_install_"] button,
+[class^="_crate-info_"] [class^="_install_"] button:active,
+[class^="_crate-toml-copy_"] button,
+[class^="_crate-toml-copy_"] button:active {
     background-color: #141920;
     border-radius: 0px 4px 4px 0px;
 }
 
-.crate-info .install button:hover {
+[class^="_crate-info_"] [class^="_install_"] button:hover,
+[class^="_crate-toml-copy_"] button:hover {
     background: #363a3e;
 }
 
-.crate-info .install button img, .crate-info .install button:active img {
+[class^="_crate-info_"] [class^="_install_"] button svg,
+[class^="_crate-info_"] [class^="_install_"] button:active svg,
+[class^="_crate-toml-copy_"] button svg,
+[class^="_crate-toml-copy_"] button:active svg {
     filter: invert(70%);
 }
 
@@ -133,22 +140,21 @@ div.exact-match h1 {
 }
 
 /* search bar */
-#header input.search, input.search {
+[class^="_search_"] {
     color: #ffffff !important;
-    background-color: #141920;
+    background-color: #141920 !important;
     transition: box-shadow 150ms ease-in-out;
     border-radius: 4px !important;
     margin-top: 8px;
     padding: 10px 16px 10px 35px !important;
-    width: 340px;
     background-position: 8px 8px !important;
     background-size: 19px 20px !important;
     background-image: url(https://crates.io/assets/search-1bf5f758e4272794e840ccb4b0a0dca9.png) !important;
 }
 
-#mobile-search input.search {
+#cargo-mobile-search [class^="_search_"] {
     color: #ffffff !important;
-    background-color: #141920;
+    background-color: #141920 !important;
     transition: box-shadow 150ms ease-in-out;
     border-radius: 4px !important;
     margin-top: 8px;
@@ -158,7 +164,7 @@ div.exact-match h1 {
 }
 
 /* when typing in it */
-#mobile-search input.search:focus, #header input.search:focus, input.search:focus {
+#cargo-mobile-search [class^="_search_"]:focus, [class^="_search_"]:focus {
     border-radius: 4px;
     box-shadow: 0px 6px 20px 0px black;
 }
@@ -237,7 +243,7 @@ a.fork-me > img {
     visibility: hidden;
 }
 
-.crate-info .crate-readme p code {
+[class^="_crate-info_"] [class^="_crate-readme_"] p code {
     border-radius: 3px;
     padding: 0 0.2em;
     background-color: #191f26;
@@ -261,8 +267,11 @@ code[class*=language-], pre[class*=language-] {
     color: #ffffff;
 }
 
-.white-rows, #tokens .row {
+.white-rows, [class^="_token-list_"], #me-email-notifications ul li {
     background-color: #0f1419;
+}
+#me-email-notifications ul label {
+    z-index: inherit;
 }
 
 .white-rows .row {
@@ -270,14 +279,14 @@ code[class*=language-], pre[class*=language-] {
     padding: 10px 0px;
 }
 
-.yellow-button:hover, .tan-button:hover, #results a.dropdown:hover, #install-downloads td a:hover {
+.yellow-button:hover, .tan-button:hover, #results [class~="dropdown-button"]:hover, #install-downloads td a:hover {
     background: none;
     background-color: rgba(242, 151, 24, 0.05);
     color: #ffb44c !important;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.yellow-button, .tan-button, #results a.dropdown, #install-downloads td a {
+.yellow-button, .tan-button, #results [class~="dropdown-button"], #install-downloads td a {
     cursor: pointer;
     border: none;
     font-family: "Roboto Mono";
@@ -295,14 +304,14 @@ code[class*=language-], pre[class*=language-] {
     font-size: 100%;
 }
 
-.crate-info .install {
+[class^="_crate-info_"] [class^="_install_"] {
     background-color: #141920;
     border-radius: 4px;
     padding: 0px;
     padding-left: 10px;
 }
 
-.crate-info .install code {
+[class^="_crate-info_"] [class^="_install_"] code {
     background-color: #191f26;
     color: #e6e1cf;
 }
@@ -378,16 +387,18 @@ img.download {
     margin-right: 5px;
 }
 
-div.graph rect {
+/* the downloads graph at the bottom of crate pages */
+
+[class^="_crate-downloads_"] [class^="_graph_"] rect {
     fill: #141920;
     rx: 4;
     ry: 4;
 }
 
-div.graph g rect {
+[class^="_crate-downloads_"] [class^="_graph_"] g rect {
     fill: #191f26;
 }
 
-div.graph text {
+[class^="_crate-downloads_"] [class^="_graph_"] text {
     fill: #c5c5c5;
 }
