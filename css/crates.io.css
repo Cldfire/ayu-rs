@@ -74,6 +74,10 @@ h1, h2, h3, h4 {
     color: #5c6773;
 }
 
+[class^="_main_"] > [class^="_header_"] {
+    background-color: #141920;
+}
+
 #me-api {
     color: #c5c5c5; 
 }
@@ -96,12 +100,20 @@ h1, h2, h3, h4 {
     color: #c5c5c5;
 }
 
-#my-feed .load-more {
+[class^="_feed_"] {
+    background-color: #141920;
+}
+
+[class^="_feed_"] [class^="_feed-row_"] {
+    border-bottom: 1px solid #5c6773;
+}
+
+[class^="_my-feed_"] [class^="_load-more_"] {
     background-color: transparent;
     color: #c5c5c5;
 }
 
-#my-feed .load-more:hover {
+[class^="_my-feed_"] [class^="_load-more_"]:hover {
     background-color: rgba(242, 151, 24, 0.05);
     color: #ffb44c;
 }
@@ -186,7 +198,34 @@ a:hover {
     text-decoration: underline;
 }
 
-.crate-lists li a {
+[class^="_highlight_"] {
+    color: #ffffff;
+}
+
+.white-rows, [class^="_token-list_"], [class^="_notifications-list_"] li {
+    background-color: #0f1419;
+}
+[class^="_notifications-list_"] [class^="_row_"] label {
+    z-index: inherit;
+}
+
+[class^="_main_"] > [class^="_list_"] {
+    background-color: #141920;
+}
+
+[class^="_list_"] [class*="_row_"] {
+    border-bottom: 1px solid #5c6773;
+}
+
+[class^="_list_"] [class*="_name_"] {
+    color: #ffffff;
+}
+
+[class^="_list_"] [class*="_description_"] {
+    color: #c5c5c5;
+}
+
+[class^="_lists_"] li a, [class^="_list_"] li a {
     color: #c5c5c5;
     background-color: #141920;
     padding: 17px 10px;
@@ -196,7 +235,7 @@ a:hover {
     color: #c5c5c5;
 }
 
-.crate-lists li a:hover {
+[class^="_lists_"] li a:hover {
     background-color: #191f26;
 }
 
@@ -212,34 +251,32 @@ a:hover {
     border-bottom: 1px solid #5c6773;
 }
 
-ul.dropdown {
-    border-radius: 5px;
-    border: none;
+[class^="_dropdown_"] {
     box-shadow: 0px 6px 20px 0px black;
     background: #0f1419;
 }
 
-ul.dropdown li {
+[class^="_dropdown_"] li {
     background: #141920;
 }
 
-ul.dropdown li a {
+[class^="_dropdown_"] li a {
     color: #c5c5c5 !important;
 }
 
-ul.dropdown li a:hover {
+[class^="_dropdown_"] li a:hover {
     background-color: #191f26;
 }
 
-ul.dropdown li.last {
+[class^="_dropdown_"] li.last {
     border-top: 1px solid #5c6773;
 }
 
-a.fork-me {
+[class^="_fork-me_"] {
     pointer-events: none;
 }
 
-a.fork-me > img {
+[class^="_fork-me_"] > img {
     visibility: hidden;
 }
 
@@ -267,29 +304,21 @@ code[class*=language-], pre[class*=language-] {
     color: #ffffff;
 }
 
-.white-rows, [class^="_token-list_"], #me-email-notifications ul li {
-    background-color: #0f1419;
-}
-#me-email-notifications ul label {
-    z-index: inherit;
-}
-
 .white-rows .row {
     border-bottom: 1px solid #5c6773;
     padding: 10px 0px;
 }
 
-.yellow-button:hover, .tan-button:hover, #results [class~="dropdown-button"]:hover, #install-downloads td a:hover {
+[class*="_yellow-button_"]:hover, [class*="_tan-button_"]:hover, #results [class~="dropdown-button"]:hover, #install-downloads td a:hover {
     background: none;
     background-color: rgba(242, 151, 24, 0.05);
     color: #ffb44c !important;
     font-weight: 400;
 }
 
-.yellow-button, .tan-button, #results [class~="dropdown-button"], #install-downloads td a {
+[class*="_yellow-button_"], [class*="_tan-button_"], #results [class~="dropdown-button"], #install-downloads td a {
     cursor: pointer;
     border: none;
-    font-family: "Roboto Mono";
     font-size: 90%;
     color: #5c6773 !important;
     border-radius: 4px !important;
@@ -302,6 +331,10 @@ code[class*=language-], pre[class*=language-] {
 
 #results a.dropdown {
     font-size: 100%;
+}
+
+[class*="_trigger_"] {
+    background-color: #141920;
 }
 
 [class^="_crate-info_"] [class^="_install_"] {
@@ -328,22 +361,22 @@ div.links a {
     text-decoration: none;
 }
 
-#selection {
+[class^="_selection_"] {
     background-color: #141920;
 }
 
-#selection a {
+[class^="_selection_"] a, [class^="_pagination_"] a {
     color: #c5c5c5;
     border-radius: 4px;
 }
 
-#selection a:hover {
+[class^="_selection_"] a:hover, [class^="_pagination_"] a:hover {
     background-color: #191f26;
     color: #0096cf;
     text-decoration: underline;
 }
 
-#selection a.active {
+[class^="_selection_"] a.active, [class^="_pagination_"] a:active, [class^="_pagination_"] a.active {
     background-color: rgba(242, 151, 24, 0.05);
     color: #ffb44c;
 }
