@@ -62,6 +62,10 @@ h1, h2, h3, h4 {
     color: #5c6773;
 }
 
+[class^="_nav_"] > [class^="_sep_"] {
+    color: #5c6773;
+}
+
 #header span.subtitle {
     color: #5c6773;
 }
@@ -74,7 +78,7 @@ h1, h2, h3, h4 {
     color: #5c6773;
 }
 
-[class^="_main_"] > [class^="_header_"] {
+[class^="_inner-main_"] > [class^="_header_"] {
     background-color: #141920;
 }
 
@@ -209,7 +213,7 @@ a:hover {
     z-index: inherit;
 }
 
-[class^="_main_"] > [class^="_list_"] {
+[class^="_inner-main_"] > [class^="_list_"] {
     background-color: #141920;
 }
 
