@@ -1,6 +1,6 @@
 # ayu-rs
 
-**Install from [userstyles.org](https://userstyles.org/styles/138541/ayu-rs-dark-theme)**
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Cldfire/ayu-rs/master/ayu-rs.user.css)
 
 ![demo screenshot](./ayu-rs_main.png)
 
@@ -9,11 +9,8 @@
 Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the purpose of beautifying various Rustlang websites. It currently supports the following:
 
 * [docs.rs](https://docs.rs/)
-* [doc.rust-lang.org](https://doc.rust-lang.org/)
-  * **If you are reading the book version** that is rendered with [mdBook](https://github.com/azerupi/mdBook) **you must have the `Navy` theme selected** for this theme to apply
-  * The Ayu theme is natively included for the book in Rust 1.22.0 and up, so this theme is mostly irrelevant now as far as the book is concerned.
 * [rustbyexample](https://doc.rust-lang.org/rust-by-example/)
-  * Note that rustbyexample also natively provides the Ayu theme, but not for the Ace editor; the CSS in this repo fixes that
+  * Note that rustbyexample natively provides the Ayu theme, but not for the Ace editor; the CSS in this repo fixes that
 * [crates.io](https://crates.io/)
 * [play.rust-lang.org](https://play.rust-lang.org/)
   * Make sure you select the `Chrome` theme in the editor in order to use this theme's editor look
@@ -23,12 +20,11 @@ Home to CSS based on the ST3 theme [ayu](https://github.com/dempfi/ayu) for the 
 
 ## Usage
 
-This theme is meant to be used with something such as [Stylus](https://github.com/openstyles/stylus). If you use Stylus, installation is as simple as going [here](https://userstyles.org/styles/138541/ayu-rs-dark-theme) and clicking the `Install Style` button. It will be automatically applied to the sites that it supports by default, but it can be used successfully with any hosted rust documentation. You can even integrate it with your own, freshly-built rustdocs [as shown here](https://blog.guillaume-gomez.fr/articles/2016-09-16+Generating+doc+with+rustdoc+and+a+custom+theme).
-
-There are, of course, other extensions / plugins / add-ons that allow you to easily re-skin websites by injecting custom CSS, and if you are a user of one you can simply copy the CSS from this repo and apply it in whatever way your extension requires. If your extension of choice has a site for collecting themes (similar to [userstyles.org](https://userstyles.org)), feel free to open an issue asking to have this theme posted there.
+* Install [Stylus](https://github.com/openstyles/stylus)
+* Click the "Install directly with Stylus" badge at the top of the README
 
 ## Issues
 
-There will undoubtedly be issues with this custom CSS. When such problems arise, please open an issue on this repo with as much information as you can provide (ideally a screenshot of the offending item and some details as to where it can be found in the HTML / CSS). If it's a more subtle issue that requires some reproduction, steps for doing that would be much appreciated.
+I love issue reports! Please include a screenshot of the issue and any pertinent details for finding where it is (like a URL). I'll take a look as soon as I can.
 
-And as always, if you've fixed an issue or made an improvement yourself, feel free to open a PR! Less work for me and faster fixes for all.
+If you're willing to put a PR together I always appreciate that too :)
