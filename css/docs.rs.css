@@ -100,7 +100,8 @@ div.package-page-container div.package-details {
     margin-top: 20px;
 }
 
-div.package-page-container div.package-menu a.pure-menu-link {
+div.package-page-container div.package-menu a.pure-menu-link,
+div.package-page-container div.package-menu li.pure-menu-item {
     color: #5c6773;
 }
 
