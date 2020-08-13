@@ -4,7 +4,7 @@
 @name          ayu-rs
 @description   Gorgeous dark theme for various Rust websites
 @namespace     https://github.com/Cldfire
-@version       1.5.8
+@version       1.5.9
 @homepageURL   https://github.com/Cldfire/ayu-rs
 @author        Cldfire (https://cldfire.dev)
 @license       MIT
@@ -113,7 +113,8 @@ div.package-page-container div.package-details {
     margin-top: 20px;
 }
 
-div.package-page-container div.package-menu a.pure-menu-link {
+div.package-page-container div.package-menu a.pure-menu-link,
+div.package-page-container div.package-menu li.pure-menu-item {
     color: #5c6773;
 }
 
@@ -477,6 +478,10 @@ main, .playground-editor {
 
 #result.ace-chrome > button {
     color: #e6e6e6;
+}
+
+.language-rust_errors a {
+    color: #0096cf;
 }
 
 /* their output thing */

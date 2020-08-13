@@ -17,7 +17,7 @@ fn main() {
 @name          ayu-rs
 @description   Gorgeous dark theme for various Rust websites
 @namespace     https://github.com/Cldfire
-@version       1.5.8
+@version       1.5.9
 @homepageURL   https://github.com/Cldfire/ayu-rs
 @author        Cldfire (https://cldfire.dev)
 @license       MIT
