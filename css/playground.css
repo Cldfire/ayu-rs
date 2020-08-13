@@ -177,6 +177,10 @@ main, .playground-editor {
     color: #e6e6e6;
 }
 
+.language-rust_errors a {
+    color: #0096cf;
+}
+
 /* their output thing */
 
 .output-body {
