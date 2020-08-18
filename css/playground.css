@@ -177,7 +177,7 @@ main, .playground-editor {
     color: #e6e6e6;
 }
 
-.language-rust_errors a {
+.output a {
     color: #0096cf;
 }
 
