@@ -124,6 +124,10 @@ span.content .method .where, .content .fn .where, .content .where.fmt-newline {
     color: #c5c5c5;
 }
 
+.stab.portability > code {
+    color: #c5c5c5;
+}
+
 div.theme-picker {
     visibility: hidden;
 }
