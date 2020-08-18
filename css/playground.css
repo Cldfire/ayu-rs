@@ -181,6 +181,10 @@ main, .playground-editor {
     color: #0096cf;
 }
 
+.output svg {
+    filter: invert(100%);
+}
+
 /* their output thing */
 
 .output-body {
