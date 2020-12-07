@@ -12,12 +12,12 @@ fn main() {
     let rustdoc = include_str!("../../css/rustdoc.css");
     let twir = include_str!("../../css/twir.css");
 
-    let usercss_header =
-"/* ==UserStyle==
+    let usercss_header = "\n
+/* ==UserStyle==
 @name          ayu-rs
 @description   Gorgeous dark theme for various Rust websites
 @namespace     https://github.com/Cldfire
-@version       1.5.10
+@version       1.5.11
 @homepageURL   https://github.com/Cldfire/ayu-rs
 @author        Cldfire (https://cldfire.dev)
 @license       MIT
