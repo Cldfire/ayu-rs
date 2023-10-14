@@ -2,6 +2,9 @@
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Cldfire/ayu-rs/master/ayu-rs.user.css)
 
+> [!IMPORTANT]
+> The Ayu theme was added directly to `rustdoc` via https://github.com/rust-lang/rust/pull/71237, and docs.rs gained Ayu support in https://github.com/rust-lang/docs.rs/pull/1116 (among others). Those were the two main reasons this user style existed. I therefore no longer use the styles in this repo, and as a result it's been archived.
+
 ![demo screenshot](./ayu-rs_main.png)
 
 **<p align="center">As seen on <a href="https://www.youtube.com/watch?v=7VulqInDO6Y">YouTube</a></p>**
